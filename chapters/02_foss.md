@@ -1,18 +1,4 @@
----
-jupyter:
-  jupytext:
-    cell_metadata_filter: -all
-    formats: ipynb,md
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.16.4
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
+
 
 # FOS
 Free and open-source (FOS) geospatial tools and software are essential for data democratization, equitable planning, and preserving natural resources because they provide accessible and transparent ways to analyze and visualize spatial data. Furthermore, increased adoption of open source practices in spatial analysis can enhance the development of the next generation of tools and the wider practice of scientific research and education {cite}`rey`. FOS tools enable individuals and communities to access, analyze, and share geospatial information regardless of their financial resources. By harnessing them, users can make informed decisions about land use planning, resource management, and environmental conservation. Additionally, the open nature of these tools fosters collaboration and innovation among diverse stakeholders, leading to more inclusive and sustainable solutions for our communities and the environment. Ultimately, FOS geospatial tools are crucial in promoting transparency, equity, and sustainability in decision-making processes related to biodiversity conservation.

@@ -1,16 +1,3 @@
----
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.16.4
-  kernelspec:
-    display_name: spatial
-    language: python
-    name: python3
----
 
 # Dynamic World
 Use Dynamic World to compare land cover change over time.
