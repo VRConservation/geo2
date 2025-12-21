@@ -1,7 +1,10 @@
+---
+title: Google Earth Engine
+subject: 
+subtitle: Introduction to geospatial analysis in the cloud using Google Earth Engine
+short_title: 3. GEE
+---
 
-
-<!-- #region -->
-# GEE
 
 Introduction to geospatial analysis in the cloud using Google Earth Engine
 

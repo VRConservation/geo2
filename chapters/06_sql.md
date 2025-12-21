@@ -1,6 +1,9 @@
-# SQL
-
-The language to learn for geospatial analysis!
+---
+title: SQL
+subject: 
+subtitle: The language to learn for geospatial analysis!
+short_title: 6. SQL
+---
 
 ## New
 

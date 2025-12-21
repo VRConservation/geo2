@@ -1,7 +1,9 @@
-
-
-<!-- #region -->
-# Python
+---
+title: Python
+subject: 
+subtitle: Python for data analsyis and visualization
+short_title: 5. Python
+---
 
 Python is widely applicable and used in the geospatial community. ArcGIS Pro has a Python package called Arcpy, and QGIS has a package named PYQGIS. It could be me, but I tried using Arcpy, read through and tried the tutorials from an entire Arcpy book, and struggled using ESRI notebooks. The language didn't stick with me, and it was overly complicated. Sure, you could run an analysis tool and copy the Arcpy code into a notebook to modify it, but I had a 'block' developing code blocks.
 
@@ -14,7 +16,7 @@ To be honest, getting started using a Windows computer was a total pain in the a
 ```{important} Getting started quick guides can be found in the Virtual Environment, Visual Studio Code, and Github appendices.
 ```
 
-To get you up and running quickly, I've provided a cheat sheet in the {doc}`/z_appendices/appendix1` appendix that summarizes the Geog-414 videos and should have you started quickly. However, you may want to refer to the videos if you get stuck.
+To get you up and running quickly, I've provided a cheat sheet in [Appendix 1](z_appendices/appendix1.md) that summarizes the Geog-414 videos and should have you started quickly. However, you may want to refer to the videos if you get stuck.
 
 ## Sentinel-2 Data
 Before you do that, let's look at a simple example from a GitHub [gist](https://gist.github.com/alexgleith/dc49156aab4b9270b0a0f145bd7fa0ce) posted by Alex Leith. We'll run it in Colab. Click the Open in Colab button.
@@ -166,11 +168,11 @@ Running that code block will result in {numref}`bgb_py`.
 Adding above and belowground biomass carbon with belowground showing.
 ```
 
-If you return to the wrench icon and select the layers icon to the left, you can switch layers on and off ({numref}`layers`).
+If you return to the wrench icon and select the layers icon to the left, you can switch layers on and off ({numref}`layers_panel`).
 
 ```{figure} /figures/python/layers.png
 :height: 200px
-:name: layers
+:name: layers_panel
 Layers panel.
 ```
 

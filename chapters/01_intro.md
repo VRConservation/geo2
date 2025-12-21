@@ -1,4 +1,10 @@
-# Introduction
+---
+title: FOS Geospatial Tools
+subject: 
+subtitle: 
+short_title: 1. Introduction
+---
+
 Welcome to Free and Open Source Geospatial Tools. This book provides resources and examples of open-source geospatial software and solutions. 
 
 ## Support
@@ -15,7 +21,7 @@ The FOSS book aims to address these challenges head-on by providing practical so
 This book is intended for beginners with some knowledge of desktop tools such as ArcGIS Pro or QGIS and a limited understanding of coding using Javascript or Python. Ideally, you will have taken an introductory geography and computer science course that introduced you to software and languages. If not, you can still get started, but some background knowledge, such as basic Python coding, will be needed to get you up to speed. Each chapter will offer resources and tutorials to help you get up to speed.
 
 ## Chapters
-The book will contain (some chapters are still being drafted) the following chapters:
+The book contains the following chapters:
 
 1. 📖**FOSS**. This is an introduction to Free and open-source software, a little about my journey in this field, and my use of the tools in the book.
 2. 🌍**Google Earth Engine**. Google Earth Engine is an incredible resource for its large data catalog and cloud-based geospatial analysis. This chapter provides some quick tips and steps to get started.

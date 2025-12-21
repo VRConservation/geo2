@@ -1,7 +1,9 @@
-
-
-# AI
-Can artificial intelligence revolutionize the geospatial world? 
+---
+title: AIML
+subject: 
+subtitle: Artificial intelligence/machine learning | Can artificial intelligence revolutionize the geospatial world? 
+short_title: 8. AIML
+---
 
 ![ai](/figures/ai.png)
 credit: brave.com

@@ -1,5 +1,9 @@
-# QGIS
-A powerful desktop GIS software infinitely customizable with plugins
+---
+title: QGIS
+subject: 
+subtitle: A powerful desktop GIS software infinitely customizable with plugins
+short_title: 7. QGIS
+---
 
 ## Background
 QGIS is a fantastic alternative to ArcGIS Pro, especially since it's free, updated regularly, and has a supportive community surrounding it. It is a desktop package and has additional packages that come with it for download, such as GRASS GIS, which are worth checking out. QGIS is a challenging tutorial because there are so many resources available to learn how to use it. This chapter assumes you have downloaded QGIS and know how to use it. If you do not, see the Introduction to QGIS and Map Academy tutorials listed in the Resources section of this chapter. 
@@ -200,7 +204,7 @@ In the save dialog box, enter Format: Geopackage, File Name Sierra Clip (click t
 ```
 
 ### Attribute table edit
-You may notice a polygon to the west in Marin County covering some of Point Reyes National Seashore near Drake's Estero that appears as a solo hexagon ({numref}`save`). This seems to be an error in the vector layer from the Task Force. Let's delete it so it doesn't appear in the subsequent analysis. 
+You may notice a polygon to the west in Marin County covering some of Point Reyes National Seashore near Drake's Estero that appears as a solo hexagon ({numref}`select`). This seems to be an error in the vector layer from the Task Force. Let's delete it so it doesn't appear in the subsequent analysis. 
 
 Zoom into the polygon by pressing the + icon in the attribute toolbar and using the hand to the left to pan to the location (hover over the icons to get the icon's name). In the same toolbar, click on the info circle with the arrow. The Identify Features icon is useful for clicking on any map area to show the layers and information about the pixel you've clicked. Once you've selected Identify Features, click inside the polygon on the map.
 

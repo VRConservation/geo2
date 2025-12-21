@@ -1,6 +1,9 @@
-# Future
-Where your geospatial journey may lead and the future of open-source geospatial software.
-
+---
+title: Future
+subject: 
+subtitle: The future of open-source geospatial software
+short_title: 11. Future
+---
 
 ## Future
 There's a lot to learn in the geospatial world, and open source usually requires more knowledge and troubleshooting but ultimately greater control over your data, analysis, outcomes, and visualization. It's a high-risk/high-gain situation! This chapter provides thoughts on where free and open-source software may go and, more importantly, where your learning may lead. Future predictions are always wrong, except where you determine your future. So, take my futuristic suggestions lightly.

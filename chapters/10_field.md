@@ -1,5 +1,9 @@
-# Field
-Guide to conducting field surveys using open-source tools
+---
+title: Field
+subject: 
+subtitle: Guide to conducting field surveys using open-source tools
+short_title: 10. Field
+---
 
 ## Background
 Using field surveys to create geospatial data is a common practice but can require costly hardware, subscriptions for cloud data, and syncing. I've found that QField, which syncs with QGIS, could be great, but the forms are clunky, and the cloud setup is not easy. I got it to work, but I wouldn't say I liked entering the data. ESRI's Survey 123 is a paid software, part of a subscription to Arc or other software. It is very easy to set up and sync data, plus you have instant maps of recorded data in the field. Survey 123 was the quickest to pinpoint GPS location. It comes at a cost, but it may be worth it if you do a lot of field surveys. The data is accessible after you send it in the Portal tab of the catalog window. Very seamless.
