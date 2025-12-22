@@ -37,7 +37,6 @@ project:
         - file: z_appendices/appendix2.md
         - file: z_appendices/appendix3.md
         - file: z_appendices/dynamic.md
-    
 site:
   template: book-theme
   options:

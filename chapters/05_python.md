@@ -9,8 +9,7 @@ Python is widely applicable and used in the geospatial community. ArcGIS Pro has
 
 Then I found Geemap and Leafmap—incredible, user-friendly Python packages developed by Qiusheng Wu and available on GitHub at GISWQS. There are also clear tutorials at leafmap.org and geemap.org and videos at [Open Geospatial Solutions](https://www.youtube.com/@giswqs). Many analyses require only one line of code. Here, geospatial analysis using scripts just clicked for me, opening up another world to analyze geospatial data.
 
-## Getting Started
-
+# Getting Started
 To be honest, getting started using a Windows computer was a total pain in the ass. So, if you're using Linux or Apple OS, setting things running will be much easier. It will take a few hours from scratch, but a great resource is at the University of Tennessee, Knoxville [Geog-414](https://geog-414.gishub.org/book/preface/software.html) course software web page. Scroll through the page to familiarize yourself with the commands. Near the bottom of the page is a series of videos to get you started, which is worth viewing and following. For some reason, I found that Miniconda didn't work well on my machine with Windows 11, but everything worked with Anaconda. 
 
 ```{important} Getting started quick guides can be found in the Virtual Environment, Visual Studio Code, and Github appendices.
@@ -288,7 +287,7 @@ Before running the code cells, ensure Leafmap is installed in your environment. 
 
 There are many more Python libraries focused on geospatial analysis. Go to github.com and search for them or find them through online tutorials, medium.com, X (Twitter), and LinkedIn. Below are some additional resources to help you go deeper.
 
-## Resources
+# Resources
 - [Geemap](https://geemap.org/) has a webpage, book, tutorials, API, and much more to support this excellent Python package.
 - [Leafmap](https://leafmap.org/) is a Python package for geospatial analysis in a Jupyter environment. It has superb documentation, tutorials, and ease of use.
 - [Open Geospatial Solutions](https://github.com/opengeos) hosts many open-source geospatial software projects and datasets.
@@ -298,4 +297,3 @@ There are many more Python libraries focused on geospatial analysis. Go to githu
 - [lonboard](https://developmentseed.org/blog/2023-10-23-lonboard). Python library for fast geospatial vector data visualization.
 - [Python for Ecologists](https://datacarpentry.org/python-ecology-lesson). The Datacarpentry.org tutorial focused on data analysis and visualization using Python and Jupyter notebooks. This is more data than geospatial, but it is a useful set of tutorials.
 - [Unlocking the Depths](https://medium.com/@kavyajeetbora/unlocking-the-depths-a-guide-to-estimating-lake-volume-with-google-earth-engine-and-python-ef36b842fa2a). A useful tutorial by Kavyajeet Bora for mapping bathymetry and calculating lake volume using Geemap.
-<!-- #endregion -->

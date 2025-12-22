@@ -5,9 +5,9 @@ subtitle:
 short_title: 2. FOS
 ---
 
-Free and open-source (FOS) geospatial tools and software are essential for data democratization, equitable planning, and preserving natural resources because they provide accessible and transparent ways to analyze and visualize spatial data. Furthermore, increased adoption of open source practices in spatial analysis can enhance the development of the next generation of tools and the wider practice of scientific research and education {cite}`rey`. FOS tools enable individuals and communities to access, analyze, and share geospatial information regardless of their financial resources. By harnessing them, users can make informed decisions about land use planning, resource management, and environmental conservation. Additionally, the open nature of these tools fosters collaboration and innovation among diverse stakeholders, leading to more inclusive and sustainable solutions for our communities and the environment. Ultimately, FOS geospatial tools are crucial in promoting transparency, equity, and sustainability in decision-making processes related to biodiversity conservation.
+Free and open-source (FOS) geospatial tools and software are essential for data democratization, equitable planning, and preserving natural resources because they provide accessible and transparent ways to analyze and visualize spatial data. Furthermore, increased adoption of open source practices in spatial analysis can enhance the development of the next generation of tools and the wider practice of scientific research and education {cite}`rey`. FOS tools enable individuals and communities to access, analyze, and share geospatial information regardless of their financial resources. By harnessing them, users can make informed decisions about land use planning, resource management, and environmental conservation. Additionally, the open nature of these tools fosters collaboration and innovation among diverse stakeholders, leading to more inclusive and sustainable solutions for communities and the environment. Ultimately, FOS geospatial tools are crucial in promoting transparency, equity, and sustainability in decision-making processes related to biodiversity conservation.
 
-## Participatory Rural Appraisal
+# Participatory Rural Appraisal
 For a portion of my graduate school research, I did community-based mapping, working with indigenous villages in a community-run reserve called Chimalapas in Oaxaca, Mexico, using participatory rural appraisal (PRA) tools. PRA involves local community members in the assessment process, enabling them to actively contribute their knowledge, experiences, and perspectives regarding natural resources ({numref}`pra`). This inclusive approach ensures that the assessment reflects the needs and priorities of the community, leading to more relevant and sustainable resource management decisions. Secondly, PRA fosters community empowerment by building local capacity, enhancing collective decision-making, and promoting ownership of development initiatives. 
 
 ```{figure} /figures/pra.jpg
@@ -20,7 +20,7 @@ The tools are simple; mapping can be drawing a diagram in the dirt or sand or wo
 
 My point is that mapping can be as simple and free as you want, especially to create something meaningful for your audience. Visual representation of maps and data is possible in any community. However, using the right tools for the analysis is critical and you cannot assume everyone understands the process or outcomes. I learned as much from developing maps in the dirt as I have from analyzing rasters for land use change or running regressions with multiple variables to develop machine learning models.
 
-## Modern GIS
+# Modern GIS
 Geographic information systems (GIS) have changed substantially in the past four decades from simple but clunky map layering to complex software processing thousands of data points in multiple dimensions. During this progression, the term GIS has shifted toward geospatial data and data analysis, and data analysis nearly always has a spatial component.
 
 An explosion in data science during the past decade from big data to <a href="https://motherduck.com/blog/big-data-is-dead/" target="_blank">big data is dead</a> has not only seen data have its <a href="https://www.youtube.com/watch?v=DqVcDV5kGcg" target="_blank">long live rock/rock is dead</a> moment it has also seen a proliferation in software and cost to geospatial analysis.
@@ -38,14 +38,14 @@ Modern GIS is open and run locally or in the cloud {cite}`forrestmod`. This shif
 Modern cloud GIS infrastructure {cite}`forrestmod`.
 ```
 
-## Data Democratization
+# Data Democratization
 Imagine a nonprofit focused on wildlife conservation in a remote corner of the world, striving to protect endangered species and fragile ecosystems amidst mounting challenges. In today's digital age, data is inundating our world at an unprecedented rate, offering valuable insights crucial for informed decision-making. 
 
 However, not all data is readily accessible, and the software required to analyze it often comes with a hefty price tag. This unfortunate reality creates a significant barrier, preventing organizations and communities in need from harnessing the power of data-driven solutions. Regrettably, the areas most in peril, facing the looming threats of destruction and extinction, are often located in developing regions where resources to combat threats to the natural world can be scarce.
 
 Data democratization is essential to bridge this gap, ensuring that vital information is accessible, empowering conservation efforts, and safeguarding our natural world for future generations. Accessible data and imagery depend on free and open-source software. The challenge with free and open-source software is that it usually requires coding knowledge, a barrier for some without a computer science background. Large language model artificial intelligence may address this issue by bridging the gap between deploying complex software for geospatial data analysis and visualization. ChatGPT's Geo+ can turn prompts into maps, but it still costs money to run. Many examples from the past year seem promising in this realm, but this promise still surpasses the reality of democratized use.
 
-## Challenges/Solutions
+# Challenges/Solutions
 The solution is to learn how to code, and fortunately, many resources are available, from YouTube to online tutorials and blogs. However, there are still challenges. I offer a few along with suggested solutions:
 
 1. **Coding language**. There are four main languages in this book. Which one should you learn first? I recommend starting with Python. <a href="https://geog-414.gishub.org/book/python/01_getting_started.html" target="_blank">Python basics</a> provides an excellent foundation for starting in Python, and freeCodeCamp has many tutorials to complement this resource. Don't just view and read, practice!

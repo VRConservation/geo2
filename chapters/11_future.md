@@ -5,7 +5,7 @@ subtitle: The future of open-source geospatial software
 short_title: 11. Future
 ---
 
-## Future
+# Future
 There's a lot to learn in the geospatial world, and open source usually requires more knowledge and troubleshooting but ultimately greater control over your data, analysis, outcomes, and visualization. It's a high-risk/high-gain situation! This chapter provides thoughts on where free and open-source software may go and, more importantly, where your learning may lead. Future predictions are always wrong, except where you determine your future. So, take my futuristic suggestions lightly.
 
 Nevertheless, given where the field seems to be headed, I will take a crack at it with a few ideas. Most of these are already happening, but they may not be fully adopted in the mainstream. Luckily for me, executable books are easily updated, so here we go.
@@ -45,5 +45,5 @@ I didn't cover the Geospatial Data Abstraction Library, or GDAL, in this version
 - [pdal.io](https://pdal.io/en/2.7-maintenance/) will help get you started with PADL.
 - Spatialised has a nice tutorial on [Lidar processing with PDAL, WMTS, and geobash](https://www.spatialised.net/lidar-and-geobash/) and also a video from FOSS4G Bucharest on [Exploiting PDAL and Entwine in the Wild](https://media.ccc.de/v/bucharest-267-exploiting-pdal-entwine-in-the-wild#t=34).
 
-## Go forth and geospatialify!
+# Go forth and geospatialify!
 The bottom line is to keep learning and practicing your geospatial skills. Try something out, share it, get feedback, and learn! I'm curious to hear about your journeys. Please let me know what you think about the book, what could be added, and your journey in the GitHub discussion connected to the repo where FOSS Geospatial tools are hosted. Thanks!

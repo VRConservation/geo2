@@ -5,12 +5,12 @@ subtitle: Guide to conducting field surveys using open-source tools
 short_title: 10. Field
 ---
 
-## Background
+# Background
 Using field surveys to create geospatial data is a common practice but can require costly hardware, subscriptions for cloud data, and syncing. I've found that QField, which syncs with QGIS, could be great, but the forms are clunky, and the cloud setup is not easy. I got it to work, but I wouldn't say I liked entering the data. ESRI's Survey 123 is a paid software, part of a subscription to Arc or other software. It is very easy to set up and sync data, plus you have instant maps of recorded data in the field. Survey 123 was the quickest to pinpoint GPS location. It comes at a cost, but it may be worth it if you do a lot of field surveys. The data is accessible after you send it in the Portal tab of the catalog window. Very seamless.
 
 Even if you conduct many surveys, the Kobo Toolbox is brilliant. Survey forms are easy to set up and sync to your phone, and filling them out in the field is easy. Plus, there is no limit to storing data or pricing, which is a huge plus. Kobo is used by many humanitarian organizations worldwide throughout crises, so the software developers here have made it very easy to use. 
 
-## Quick start
+# Quick start
 1. Sign up for an account at Kobo Toolbox. Download KoboCollect to your phone and sign in.
 2. Open the forms and add questions in the Kobo toolbox, then Deploy once it's ready.
 3. Sync the survey to your phone (Download form) and ensure it's uploaded and working.
@@ -20,7 +20,7 @@ Even if you conduct many surveys, the Kobo Toolbox is brilliant. Survey forms ar
 7. Download the data in Excel, csv, or geojson. I found the Excel download best, then converted that file to csv after modifying unnecessary columns. Note that you don't need to add date, unique field, or time as fields to the form since they are automatically added.
 8. Import the csv into a notebook, QGIS, or Kepler to view it.
 
-## Stand Density Index
+# Stand Density Index
 Foresters have long used stand density index (SDI) to measure forest stocking levels since it is calculated from size and number of trees per unit area {cite}`reineke`. Since it also measures inter-specific tree competition and how crowded a stand is {cite}`north` used it as a proxy estimate for forest health using the summation method:
 
 $$
@@ -120,8 +120,7 @@ The total number of trees sampled for the size stand is not sufficient, but with
 
 There's your start from collection to visualization. Hopefully, this will inspire you to collect some needed data for your organization, agency, or dissertation! Additional resources are provided below.
 
-## Resources
+# Resources
 - **[Kobo Toolbox](https://www.kobotoolbox.org)**. An open-source data collection platform that's easy to use and set up. Kobo is a form-based app that syncs to the cloud so you need to export the csv or geojson files and then load them into your geospatial analysis software of choice.
 - **[ODK](https://getodk.org)**. Free if you can self-host and support.
-- **[QField](https://qfield.org)**. Survey and digitize data mobile app that syncs to QGIS. The QField setup tutorial from [GISGeography](https://gisgeography.com/qfield/) runs you through the basics to get up and running. QField would be amazing if it were easy to set up and use. Unfortunately, its use is more difficult than anticipated. The cloud sync works but does not allow much storage. You can pay for increased storage, however. It's a great idea, but it needs a lot more work to be easier.
-
+- **[QField](https://qfield.org)**. Survey and digitize data mobile app that syncs to QGIS. The QField setup tutorial from [GISGeography](https://gisgeography.com/qfield/) runs you through the basics to get up and running. QField would be amazing if it were easy to set up and use. Unfortunately, its use is more difficult than anticipated. The cloud sync works but does not allow much storage. You can pay for increased storage, however. It's a great idea, but it needs a lot more work for ease of use.

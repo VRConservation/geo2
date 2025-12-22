@@ -5,8 +5,7 @@ subtitle: The language to learn for geospatial analysis!
 short_title: 6. SQL
 ---
 
-## New
-
+# New
 SQL is pronounced 'sequel' and is short for structure query language. I'm new to using SQL for geospatial analysis. Still, I am amazed at how easy it is to learn, how fast it analyzes large datasets, and how critical it is for data analysis. SQL is the universal database management language, so geospatial aside, if you work with data, you must learn how to use it. The basic structure of a SQL query is shown in the tips window. Initially, the CREATE and SELECT * FROM commands are used in data exploration, followed by finer-scale querying.
 
 ```{tip}
@@ -19,16 +18,13 @@ ORDER BY desc <br>
 LIMIT
 ```
 
-## DuckDB
-
+# DuckDB
 In this chapter, we will use [DuckDB](https://duckdb.org/) as the SQL software package. DuckDB is fast, works seamlessly with many programming languages, including Python, R, and Javascript, and is easy to install. DuckDB also has a spatial extension to perform queries and analyze geospatial data, which we will look at in this chapter. The big advantage of DuckDB is its speed in processing large datasets.
 
 ## Installation
-
 Installation is straightforward: follow the instructions for the command line or Python at the DuckDB installation [page](https://duckdb.org/docs/stable/guides/python/install.html).
 
 ## Wood processing
-
 Let's move to an example from the University of California's Woody Biomass Utilization Group's Biomass Power Plant [Database](https://ucanr.edu/site/woody-biomass-utilization/california-forest-products-and-biomass-power-plant-map). What do mills have to do with forest conservation? We're not talking about rapacious clearcutting from the past but a sustainable forest management model that reduces wildfire and returns western forests to a healthier and more resilient state. Fires threaten most forests in the western United States due to more than a century of fire suppression. 
 
 Through ecological thinning and prescribed fire, unhealthy forests can return to a natural range of variation by lowering competition across stands. This approach can reduce compounding stresses from drought, insect infestations, and wildfire and create more resilient forests {cite}`north`. Thinning will produce large amounts of forest biomass that can be processed through community-based mills and biomass plants. Developing this infrastructure is one way to help solve the wildfire crisis threatening biodiversity and people.
@@ -250,7 +246,7 @@ Distribution heatmap in Washington state of Lewis's Woodpecker.
 
 Hopefully, these examples are enough to get you started. The resources below have more detailed examples and videos to go deeper. Make sure to practice and try out queries, joins, and other spatial functions with different datasets, including geosjson and geoparquet, to go beyond using shp and csv files.
 
-## Resources
+# Resources
 - **[GEOG-414](https://geog-414.gishub.org/book/duckdb/01_duckdb_intro.html)**. The DuckDB portion of Qiusheng Wu's Geography 414 course is a recommended way to expand your spatial SQL knowledge.
 - **[Spatial SQL](https://spatial-sql.com/)**. Matt Forrest's text on using SQL in modern GIS is an excellent reference and starter for using SQL within a spatial context. Although the book could use a copyedit (many spelling errors) and better organization (figures disconnected from text, tutorials with more bullets/less text), everything is in the book that you will need to become a spatial SQL expert. The tutorials are relevant and guide you through critical beginner -> advanced workflows using spatial SQL.
 - **[SQL-QGIS Tip](https://twitter.com/spatialthoughts/status/1774833044396081189)**. You can use the 'Execute SQL' processing algorithm to run SQL queries on ANY vector layer within QGIS. Here's an example of calculating group statistics on a vector layer. This also allows you to run SQL queries in a model.

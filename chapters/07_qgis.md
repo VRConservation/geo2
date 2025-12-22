@@ -5,13 +5,13 @@ subtitle: A powerful desktop GIS software infinitely customizable with plugins
 short_title: 7. QGIS
 ---
 
-## Background
+# Background
 QGIS is a fantastic alternative to ArcGIS Pro, especially since it's free, updated regularly, and has a supportive community surrounding it. It is a desktop package and has additional packages that come with it for download, such as GRASS GIS, which are worth checking out. QGIS is a challenging tutorial because there are so many resources available to learn how to use it. This chapter assumes you have downloaded QGIS and know how to use it. If you do not, see the Introduction to QGIS and Map Academy tutorials listed in the Resources section of this chapter. 
 
-### Muringato case study
-QGIS is used IRL! See the dropdown case on land use change in Kenya using QGIS analytical tools conducted by scientists at the Remote Sensing Research Group, Institute of Geomatics, GIS and Remote Sensing, Dedan Kimathi University of Technology. This is an abridged version of the article and study.
+## Muringato case study
+QGIS used IRL! See the dropdown case on land use change in Kenya using QGIS analytical tools conducted by scientists at the Remote Sensing Research Group, Institute of Geomatics, GIS and Remote Sensing, Dedan Kimathi University of Technology. This is an abridged version of the article and study.
 
-```{admonition} Muringato Land Use Change Case Study
+:::{seealso} Muringato Land Use Change Case Study
 :class: dropdown
 
 **Monitoring the degradation of the Aberdare Ranges in the Muringato Catchment area, Kenya, Using Earth Observation Techniques**
@@ -42,6 +42,7 @@ Forest cover comprised 121 km<sup>2</sup> of the Muringato catchment area in 199
 :name: lulc
 Muringato Land Use and Land Cover time series analysis from image scenes.
 ```
+:::
 
 ## Sierra species richness
 For this tutorial, we'll examine species richness by hexagon, known as tessellation, in the Sierra Nevada, California. Ensure you regularly save the project by typing control/command S or Project/Save.
@@ -299,7 +300,7 @@ Instead of a static layout, you may want to export it as a web map:
 6. Click Export to export the project as an OpenLayers map.
 7. The project should open as an html file in your default browser.
 
-## Resources
+# Resources
 The Sierra species richness tutorial should give you a flavor of QGIS' capabilities and processing algorithms. To go deeper in your learning and geospatial practice, here are some additional QGIS resources:
 
 - **[QGIS Training Manual](https://docs.qgis.org/3.34/en/docs/training_manual/index.html)**. A comprehensive resource for all use cases of QGIS, plus contributed chapters and tutorials. Always a great place to search to find specific answers to your problems.

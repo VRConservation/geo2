@@ -20,6 +20,7 @@ An exception to the usefulness side I've seen with AI is [Bunting Lab's](https:/
 Due to AI's underwhelming but promising status to date, I will wait another year to see if more compelling examples arise. I've provided a few promising links. Overall, AI could help democratize geospatial analysis by lowering the cost of entry to both data and coding.
 
 ## Resources
+- NASA/Microsoft VEDA dashboard and earth copilot
 - [Autonomous GIS](https://github.com/gladcolor/LLM-Geo). This repo and LLM are pretty cool and hopefully will receive further development over time. Unfortunately, there was a lot of activity from commits when it came out, but not much since.
 - [Jupyter generative AI](https://blog.jupyter.org/generative-ai-in-jupyter-3f7174824862). Generative AI coding in Jupyter notebooks.
 - [human brain edge over ai article](https://www.linkedin.com/pulse/where-human-brain-still-has-edge-over-ai-fast-company-j2jpe/)
