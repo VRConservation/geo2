@@ -45,7 +45,7 @@ site:
     logo: logo.png
   nav:
     - title: Geospatial
-      url: https://3point.xyz/geosp
+      url: https://3point.xyz/geo2
     - title: Confi
       url: https://3point.xyz/confi
     - title: FBA guide
