@@ -21,7 +21,7 @@ Even if you conduct many surveys, the Kobo Toolbox is brilliant. Survey forms ar
 8. Import the csv into a notebook, QGIS, or Kepler to view it.
 
 # Stand Density Index
-Foresters have long used stand density index (SDI) to measure forest stocking levels since it is calculated from size and number of trees per unit area {cite}`reineke`. Since it also measures inter-specific tree competition and how crowded a stand is {cite}`north` used it as a proxy estimate for forest health using the summation method:
+Foresters have long used stand density index (SDI) to measure forest stocking levels since it is calculated from size and number of trees per unit area [@reineke]. Since it also measures inter-specific tree competition and how crowded a stand is, @north used it as a proxy estimate for forest health using the summation method:
 
 $$
 \sum TPH_i\left( \frac{DBH_i}{25.4}\right)^{\!1.6}
@@ -29,9 +29,9 @@ $$
 
 where TPH = trees ha<sup>-1</sup> of tree<sub>i</sub> and DBH<sub>i</sub> = diameter breast height (cm) of tree<sub>i</sub>.
 
-The summation method is recommended for uneven-age or irregular structure stands {cite}`shaw`. It is appropriate to stands found in the New Forest, a mixture of non-native plantation species such as Scot Pine (_Pinus sylvestris_) and Douglas fir (_Pseudotsuga menziesii_) with native species such as English Oak (_Quercus robur_), beech (_Fagus sylvatica_), and holly (_Ilex aquifolium_).
+The summation method is recommended for uneven-age or irregular structure stands [@shaw]. It is appropriate to stands found in the New Forest, a mixture of non-native plantation species such as Scot Pine (_Pinus sylvestris_) and Douglas fir (_Pseudotsuga menziesii_) with native species such as English Oak (_Quercus robur_), beech (_Fagus sylvatica_), and holly (_Ilex aquifolium_).
 
-## Methodology
+# Methodology
 To examine forest health in a local forest stand, I measured trees > 30 cm in dbh circumference within 500 m<sup>2</sup> plots at the forested areas randomly sampled from the New Forest National Park, United Kingdom. The sample data shown is from the first three measured plots at Norleywood Enclosure.
 
 ## Field data
@@ -120,7 +120,8 @@ The total number of trees sampled for the size stand is not sufficient, but with
 
 There's your start from collection to visualization. Hopefully, this will inspire you to collect some needed data for your organization, agency, or dissertation! Additional resources are provided below.
 
-# Resources
+## Resources
 - **[Kobo Toolbox](https://www.kobotoolbox.org)**. An open-source data collection platform that's easy to use and set up. Kobo is a form-based app that syncs to the cloud so you need to export the csv or geojson files and then load them into your geospatial analysis software of choice.
 - **[ODK](https://getodk.org)**. Free if you can self-host and support.
-- **[QField](https://qfield.org)**. Survey and digitize data mobile app that syncs to QGIS. The QField setup tutorial from [GISGeography](https://gisgeography.com/qfield/) runs you through the basics to get up and running. QField would be amazing if it were easy to set up and use. Unfortunately, its use is more difficult than anticipated. The cloud sync works but does not allow much storage. You can pay for increased storage, however. It's a great idea, but it needs a lot more work for ease of use.
+- **[QField](https://qfield.org)**. Survey and digitize data mobile app that syncs to QGIS. The QField setup tutorial from [GISGeography](https://gisgeography.com/qfield/) runs you through the basics to get up and running. QField would be amazing if it were easy to set up and use. Unfortunately, its use is more difficult than anticipated. The cloud sync works but does not allow much storage. You can pay for increased storage, however. It's a great idea, but it needs a lot more work to be easier.
+

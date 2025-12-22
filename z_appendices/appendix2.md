@@ -22,9 +22,9 @@ Visual Studio Code has great documentation and setup tutorials so that we won't 
 
 Optional extensions include github copilot (requires a subscription) and chatgpt (requires a subscription for some versions). I highly recommend considering copilot as the chat and autocomplete, for it often suggests code that works or can help you resolve errors in your code when searches or your own editing don't work. It will also greatly speed up the process of producing code and seems to be improving rapidly. Copilot is free to students and possibly free through select nonprofit organizations.
 
-```{tip}
+:::{tip} Jupyter Lab
 Run jupyter notebooks in your browser by navigating to the file where you want to run the notebooks or have existing notebooks. Right click on a blank space in the file navigator then select Open in Terminal. Enter `conda activate yourenv` substituting yourenv for your virtual environment name. Then run `jupyter lab`. This will open a locahost window in your default web browser where you can edit existing or open new notebooks.
-```
+:::
 
 ## Environment Variables Setup
 

@@ -30,9 +30,10 @@ Note this will install the latest version of Python on your computer. Sometimes,
 conda create -n geo python=3.12
 ```
 
-```{warning}
+:::{warning}
+:class: dropdown
 **Do not install packages into your base environment!**. Although it's tempting not to install packages into your base, don't do it. Python packages are prone to incompatibilities. Creating virtual environments mitigates dependency management issues, keeps your projects separate, and allows you to diagnose problems separately when they arise.
-```
+:::
 
 4. Activate the new environment. 
 
