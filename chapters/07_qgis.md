@@ -174,11 +174,11 @@ Open the Layer Styling Pane>Simple Fill>Fill color>Transparent>Stroke Color>Ligh
 Tessellated hexagon grid covering the map extent.
 ```
 
-We need to clip the hexagons outside the Sierra region. Close the Layer Styling Pane and open the Processing Toolbox. Start typing Select by location and double-click the toolbox with the same name. Fill out the toolbox with Select features from Grid, where the features Intersect, and compare to features from Sierra Nevada ({numref}`location`).
+We need to clip the hexagons outside the Sierra region. Close the Layer Styling Pane and open the Processing Toolbox. Start typing Select by location and double-click the toolbox with the same name. Fill out the toolbox with Select features from Grid, where the features Intersect, and compare to features from Sierra Nevada ({numref}`location-tool`).
 
 ```{figure} /figures/qgis/location.png
 :height: 500px
-:name: location
+:name: location-tool
 Select by Location tool.
 ```
 

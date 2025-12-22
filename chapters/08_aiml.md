@@ -1,12 +1,14 @@
 ---
 title: AIML
 subject: 
-subtitle: Artificial intelligence/machine learning | Can artificial intelligence revolutionize the geospatial world? 
+subtitle: Can artificial intelligence revolutionize the geospatial world? 
 short_title: 8. AIML
 ---
 
-![ai](/figures/ai.png)
-credit: brave.com
+:::{image} /figures/ai.png
+:alt: Brave image of ai
+:align: center
+:::
 
 ## Future edition
 Whether AI can revolutionize the geospatial world is a good question. {cite:t}`aiscan` concluded that AI will lead to beneficial outcomes, however, it is not a panacea, and measures must be put into place for equitable access and deployment. In a review of the same paper, Frank van der Most points out that only two of the 21 applications cited as significant are focused on implementing solutions {cite}`fvdm`.

@@ -79,7 +79,11 @@ m.centerObject(region)
 m
 ```
 
-![schwing](https://i.imgur.com/jMFTsrB.jpeg)
+:::{image} /figures/schwing.png
+:alt: Schwing
+:width: 500px
+:align: center
+:::
 
 Schwing! To export the first map as a geotiff use this codeblock:
 
