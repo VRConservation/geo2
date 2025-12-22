@@ -32,10 +32,12 @@ Table 1. Pros and cons of select geospatial software providers.
 | R, RStudio | Use, Plugins, Academic standard | Slow at times | Free |
 
 ## Discussion & Caveats
-Use means ease of use. Vis = visualization is very good and feature-rich. Support and documentation indicate good or bad support. Typically, the software documentation and tutorials are very good, or the company or software provider quickly responds to bugs or questions. 
+From Table 1, the term 'Use' signifies ease of use. Vis = visualization is very good and feature-rich. Support and documentation indicate good or bad support. Typically, the software documentation and tutorials are very good, or the company or software provider quickly responds to bugs or questions. 
 
-I did not add many software packages I have not used (or, in the case of GDAL, that I'm afraid of). I have limited knowledge and use of CARTO, Felt, and Earth Blox since I've only used them in free-to-test form. As a result, my pros and cons are limited for them.
+I did not add many software packages I have not used (or, in the case of GDAL, that I'm afraid to use!). I have limited knowledge and use of CARTO, Felt, and Earth Blox since I've only used them in free-to-test form. As a result, my pros and cons are limited for those packages.
 
 Pricing is difficult since several companies are opaque about their pricing, ask you to submit information for a quote, or want you to participate in a call to give you bespoke pricing quotes. For instance, Earth Blox does not list their price online and would not tell me when I emailed them, but they offered to schedule a call to discuss the product. I've tried to add information on pricing when I have an approximate or specific idea.
 
-One common thread with pros and cons of software use is that free is good. So is the long-term viability of a provider. You don't want to put all your assets, analysis, and projects into a proprietary system to have the company later go belly up, making your data and analysis difficult to access. Several long-term providers, such as QGIS and Google Earth Engine (GEE), have very active communities, so getting help through forums for common bugs and errors is often easy. Plus, these software providers have been around for a long time.
+One common thread with pros and cons of software cost is that paid means high quality and ample tech support. This is not necessarily true. Some open source software providers are quick to reply or help with issues, partly because they're small. For well loved free and open source software, there are often communities, wikis, or fora that can provide help or feedback to resolve issues. Several long-term providers, such as QGIS and Google Earth Engine (GEE), have very active communities, so getting help through forums for common bugs and errors is often easy. 
+
+A major caveat for any software is the long-term viability of a provider. You don't want to put all your assets, analysis, and projects into a proprietary system to have the company later go belly up, making your data and analysis difficult to access.
