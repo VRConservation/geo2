@@ -37,23 +37,23 @@ The book contains the following chapters:
 ## Github, Colab & Binder
 Free and Open Source Geospatial Tools is hosted in a GitHub repository, accessible by clicking the GitHub logo above. Each chapter is also available in Binder and Colab to make running the code easier if you do not have an integrated development environment (IDE), such as Visual Studio Code, set up. I recommend setting up VS Code to run software; guidance for how to do so can be found in the Appendices.
 
-## jupyter{book}
-This book was made using [Jupyter Books](https://jupyterbook.org/), a free and open-source package that lets anyone build beautiful, publication-quality books and articles from computational content. Thank you, Jupyter Books, for this wonderful resource!
+## MyST
+This book was made using [MyST](https://mystmd.org/), a free and open-source package that lets anyone build beautiful, publication-quality books and articles from computational content. Thank you, MyST for this wonderful resource!
 
 ## Citation
 Please cite as
 
-Russell, Vance. 2024. [Free and Open Source Geospatial Solutions](https://3point.xyz/geosp-bib). 3point Geospatial.
+Russell, Vance. 2026. [Free and Open Source Geospatial Solutions](https://3point.xyz/geo2). 3point Geospatial.
 
 or in Bibtex format:
 
 ```
-@book{vrussell2024,
+@book{vrussell2026,
   title		  = {Free and open source geospatial tools},
   author	  = {Russell, Vance},
-  year		  = {2024},
+  year		  = {2026},
   publisher	  = {3point Geospatial},
-  url 		  = {https://3point.xyz/geosp-bib}
+  url 		  = {https://3point.xyz/geo2}
 }
 ```
 
