@@ -10,7 +10,7 @@ Welcome to Free and Open Source Geospatial Tools. This book provides resources a
 # Support
 This book is free to use for anyone. If you want to support, donate, or buy me a coffee, please visit my [paypal](https://paypal.me/3pointxyz) site. I will be adding chapters and resources in the future. Please share the book with others who might benefit from reading it. I appreciate your support!
 
-# Why this book
+# Why this book?
 Accessing, processing, and analyzing geospatial data can be daunting, often hindered by data accessibility, compatibility, and cost constraints. There are many geospatial resources, tutorials, and books available, but most focus on specific tools, such as Spatial SQL [@forrest2023], the Cloud-Based Remote Sensing with Google Earth Engine remote sensing [@eefa] or Qiusheng Wu's excellent geospatial data analysis book using Geemap and Earth Engine [@geemap]. Inspired by the Free and Open Source Software for Geospatial (FOSS4G) conference started by the Open Source Geospatial Foundation, Free and Open Source Geospatial Tools provides a guide to open-source geospatial software packages and workflows.
 
 At the software level, many tutorials, GitHub repositories, and software sites assume you are familiar with installation or running code. They'll use acronyms such as CLI and IDE; you will have no idea what they're talking about if you're a beginner. Once you decipher the terms, running into errors and trying to fix them can be trying or a deterrent to using free and open-space geospatial software. Don't be discouraged by entering this new world; keep at it when errors occur, or the code doesn't do what you want.
@@ -33,9 +33,6 @@ The book contains the following chapters:
 8. 📶**R**. A programming language universally adopted by academics, R is easy to use and start with and has many statistical computing, data visualization, and geospatial packages.
 9. 🔎**Field Surveys**. Your guide to open-source field data collection.
 10. 🔮**Future**. Where your journey might lead with other established free and open-source geospatial software. We'll also explore the future of free and open-source geospatial software.
-
-## Github, Colab & Binder
-Free and Open Source Geospatial Tools is hosted in a GitHub repository, accessible by clicking the GitHub logo above. Each chapter is also available in Binder and Colab to make running the code easier if you do not have an integrated development environment (IDE), such as Visual Studio Code, set up. I recommend setting up VS Code to run software; guidance for how to do so can be found in the Appendices.
 
 ## MyST
 This book was made using [MyST](https://mystmd.org/), a free and open-source package that lets anyone build beautiful, publication-quality books and articles from computational content. Thank you, MyST for this wonderful resource!

@@ -59,7 +59,7 @@ We will follow the following workflow to examine species richness:
 ### Add data
 1. If you haven't already installed the QuickMapServices plugin, go to Plugins/Not installed, look for QuickMapServices, and select Install Plugin. In QMS, search for Dark Matter and click Add to add it as a basemap.
 2. Go to the [Biodiviersity Conservation](https://rrk.sdsc.edu/sierra.html#bio_conserv) dataset for the California Wildfire Task Force Regional Resource Kits. Under Species Diversity/Wildlife Species Richness, click the pull-down menu for Raw Data, download, then unzip the tif file.
-3. Add your downloads folder to favorites in the browser panel by navigating to your downloads, right-clicking, and selecting add to favorites. In the favorites at the top of the panel, open downloads, the species richness file, then draft the tif onto the map canvas. It should appear on the map and in your layers ({numref}`wsr_gray`).
+3. Add your downloads folder to favorites in the browser panel by navigating to your downloads, right-clicking, and selecting add to favorites. In the favorites at the top of the panel, open downloads, the species richness file, then drag the tif onto the map canvas. It should appear on the map and in your layers ({numref}`wsr_gray`).
 
 ```{figure} /figures/qgis/wsr_gray.png
 :height: 500px
@@ -201,7 +201,7 @@ Export/Save Selected Features As.
 
 In the save dialog box, enter Format: Geopackage, File Name Sierra Clip (click the three dots to the right and navigate to the folder where you've saved the project), Layer name: Sierra Clip, and click ok. You should get a Layer Export success message at the top of the map window. 
 
-```{note} That's a lot of work to create hex layers; they're not even transverse hexagons! You can create hexbins at the click of a button using the kepler.gl open app that can be used within VS Code or in a jupyter notebook.
+```{note} That's a lot of work to create hex layers; they're not even transverse hexagons! You can create hexbins at the click of a button using the kepler.gl within VS Code or in a jupyter lab notebook.
 ```
 
 ### Attribute table edit
