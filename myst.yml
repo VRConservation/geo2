@@ -43,8 +43,8 @@ site:
     favicon: favicon.ico
     logo: logo.png
   nav:
-    - title: Geospatial
-      url: https://3point.xyz/geo2
+    - title: 3point.xyz
+      url: https://3point.xyz
     - title: Confi
       url: https://3point.xyz/confi
     - title: FBA guide
