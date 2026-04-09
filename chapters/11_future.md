@@ -42,7 +42,7 @@ I didn't cover the Geospatial Data Abstraction Library, or GDAL, in this version
 - Joshua Stevens has a convincing deck on using the command line for cartographic workflows [here](https://speakerdeck.com/jscarto/commanding-cartography-take-control-of-faster-more-elegant-workflows-from-the-command-line?slide=39).
 - Open Source Options has a [GDAL Python Tutorial](https://www.youtube.com/watch?v=bK-eCFUFgkQ) on YouTube that shows how to use Python and GDAL to read, create, and display raster data.
 - [PDAL Tutorial](https://sites.google.com/thewatershedcenter.com/caflclanding/code-tutorials/pdal-tutorials?authuser=0) from the Watershed Research and Training Center. This helps you install the Point Data Abstraction Library, or PDAL, and run it from a container. It does not run you through a sample dataset.
-- [pdal.io](https://pdal.io/en/2.7-maintenance/) will help get you started with PADL.
+- [pdal.io](https://pdal.io/en/2.7-maintenance/) will help get you started with PDAL.
 - Spatialised has a nice tutorial on [Lidar processing with PDAL, WMTS, and geobash](https://www.spatialised.net/lidar-and-geobash/) and also a video from FOSS4G Bucharest on [Exploiting PDAL and Entwine in the Wild](https://media.ccc.de/v/bucharest-267-exploiting-pdal-entwine-in-the-wild#t=34).
 
 # Go forth and geospatialify!
