@@ -8,25 +8,36 @@ exports:
       template: lapreprint-typst
       output: export/11_datavis.pdf
 ---
-> "Because the world around us is a complex one, it would be virtually impossible to simply place a small version of it on a map...Consequently all maps are abstractions of reality and form." @field
+# FOSS Visualization
+There are a lot of ways to visualize data, some of them quite expensive and propietary. Then there are free and open source software tools that are increasingly useful and sometimes on a par with paid or subscription software. 
 
-# 3. Visualization Principles
-Maps as an abstraction of reality give their author a great deal of responsiblity and power. This can be abused, e.g., maps that lie or neglected, e.g., maps that suck or are very hard to decipher.
-
-## FOSS Visualization
-There are a lot of ways to visualize data, some of them quite expensive others expensive and propietary. Then there are free and open source software tools that are increasingly useful and sometimes on a par with paid or subscription software. 
-
-Generally the biggest plus to using FOSS tools is they're free and flexible, keep you and in charge of the data and what it looks like, and your data doesn't have to go to a cloud server to be used by whatever AI company to train their models {numref}`pluses`. The biggest disadvantage is having to rely heavily on code and the terminal to run the tools. However, the latter is become less of a barrier with large language models (LLMs) such as Claude, script snippets, and other tricks we'll show you that make life easier in the FOSS world.
+Generally, the biggest plus to using FOSS tools is they're free and flexible, keep you and in charge of the data and what it looks like, and your data doesn't have to go to a cloud server to be used by whatever AI company to train their models {numref}`pluses`. The biggest disadvantage is having to often rely on code and the terminal to run the tools. However, the latter is becoming less of a barrier with large language models (LLMs) such as Claude, script snippets, and other tricks we'll show you that make life easier in the FOSS world.
 
 :::{table} Pros and cons of free and open source tools for data visualization.
 :label: pluses
 :align: center
-| **PROS**    | **CONS**  |
-|-------------------|-----------|
-| 🟢 Free | 🔴 Code and CLI to use |
-| 🟢 Open-source | 🔴 Can frequently fail |
+| **PROS**                | **CONS**  |
+|-------------------------|-----------|
+| 🟢 Free                 | 🔴 Code and CLI |
+| 🟢 Open-source          | 🔴 Can frequently fail |
 | 🟢 Learning code is fun | 🔴 Some software not updated |
-| 🟢 Flexible | 🔴 Unavailable tools |
+| 🟢 Flexible             | 🔴 Unavailable tools |
+:::
+
+# Principles
+> "Because the world around us is a complex one, it would be virtually impossible to simply place a small version of it on a map...Consequently all maps are abstractions of reality and form." @field
+
+FOSS is really just the tools you use to convey your information and you can make bad maps with paid and FOSS. What matters are the principles of map design. Maps as an abstraction of reality give their author a great deal of responsiblity and power. This can be abused, e.g., maps that lie or neglected, e.g., maps that suck or are very hard to decipher. John Nelson outlines three key components of an effective map layout that include balancing the composition, keeping components to a minimum, and minimizing text ({numref}`principle-table`). We'll forgive him for doing the work in ArcGIS Pro.
+
+:::{table} Principles of sound map layouts ([John Nelson](https://www.youtube.com/watch?v=q93ZAFoS_bc&t=10s)).
+:label: principle-table
+:align: center
+
+| Principle | Details |
+|-----------|---------|
+| Composition | - Overall, balance the composition <br>- Prioritize map size<br>- Area of interest best fit = layout orientation<br>- Use surrounds as balancing agents<br>- Use layout guides |
+| Text        | - Only key words as title<br>- Secondary context as sub-title<br>- Eliminate, distill, or defer paragraphs<br>- Integrate annotation <br>- Include attribution |
+| Surrounds   | - Remove unnecessary borders, backgrounds, and neatlines<br>- Simplify the legend and  overview<br>- Remove the north arrow, scalebar, and photographs |
 :::
 
 ## Purpose & Audience
@@ -55,27 +66,25 @@ Common distortions to avoid include
 - Area/volume charts that don't scale properly with data
 - Cherry-picked time ranges or data subsets without context
 
-According to @tufte the Lie Factor = Size of effect shown in graphic / Size of effect in data with a value of 1.0 indicating accurate data representation.
-
-## Visual Encoding
+## Encoding
 The way you encode data visually determines how effectively viewers can extract information. Different visual variables work better for different types of data. Research in graphical perception shows that certain visual properties are processed pre-attentively (instantly, without conscious effort). Bertin's foundational work established that visual encoding must match the logical structure of the data being represented. This principle remains central to modern cartography and information design [@bertin]. Using the wrong encoding forces viewers to work harder to understand your data. These visual properties encode different types of information at different effectiveness levels {numref}`variables`.
 
 :::{table} Visual variables [@bertin].
 :label: variables
 :align: center
 
-| Visual Variable | Best For | Effectiveness |
-|---|---|---|
-| **Position** | Precise comparisons, continuous data | Highest |
-| **Size** | Quantities, hierarchies | High |
-| **Color (Hue)** | Categorical differences, qualitative data | High |
-| **Value** (lightness) | Ordered sequences, quantitative ranges | High |
-| **Texture/Pattern** | Categorical distinctions | Medium |
-| **Orientation** | Directional data, flow | Medium |
-| **Shape** | Category identification | Lower (hard to compare) |
+| Visual Variable       | Best For                                  | Effectiveness |
+|-----------------------|-------------------------------------------|---------|
+| **Position**          | Precise comparisons, continuous data      | Highest |
+| **Size**              | Quantities, hierarchies                   | High    |
+| **Color (Hue)**       | Categorical differences, qualitative data | High    |
+| **Value** (lightness) | Ordered sequences, quantitative ranges    | High    |
+| **Texture/Pattern**   | Categorical distinctions                  | Medium  |
+| **Orientation**       | Directional data, flow                    | Medium  |
+| **Shape**             | Category identification                   | Low     |
 :::
 
-A key principle is to match the esncoding to your data type. These include:
+A key principle is to match the encoding to your data type. These include:
 
 - **Categorical data** → Use hue (distinct colors), shape, or texture
 - **Ordinal data** (ranked) → Use value/lightness, size, or position
@@ -113,10 +122,17 @@ Some examples of items to eliminate:
 North arrows are nice, but add clutter to maps and often are not needed when it's understood that up is north on the page. North arrows are only really necessary if you've rotated the map and north is a different direction. Scale bars also add to the clutter and are not necessary, particularly if your audience is familiar with the map's region or you have an inset map showing the location of the area. There are always exceptions to layout cleanup, but it's usually better to leave these out. Your map will be easier to read and cleaner as a result. Don't add these items for dogmatic reasons, ask if they really add value and only add if needed.
 :::
 
-## Visual Hierarchy
-Guide viewer attention and integrate all elements intentionally. Don't add items such as north arrows and scale bars just because everyone else does. A well-designed visualization controls the order and emphasis of information, guiding viewers from the most important insights to supporting details. Modern visualization experts including @few emphasize the importance of visual hierarchy in directing attention and improving comprehension.
+## Hierarchy
+Guide viewer attention and integrate all elements intentionally. Don't add items such as north arrows and scale bars just because everyone else does. A well-designed map controls the order and emphasis of information, guiding viewers from the most important insights to supporting details. Visualization experts emphasize the importance of visual hierarchy in directing attention and improving comprehension [@few].
 
-Use these techniques to emphasize importance:
+Viewers naturally scan visualizations with a specific eye pattern. By understanding this, you can guide them to your key insights first, then let them explore details. This makes your visualization more persuasive and memorable. Basic design principles to aid your design include
+
+- **Consistency** - Use the same colors and symbols throughout a series of maps/charts
+- **Balance** - Distribute visual weight; avoid one-sided emphasis
+- **Rhythm** - Repetitive patterns (when intentional) can emphasize patterns in data
+- **Gestalt** - Gestalt principles describe how humans perceive and organize visual organization. Some of these include linking similar elements, symmetry, proximity, and continuity. Use these when organizing map elements.
+
+Use the following to emphasize importance or lead the viewer to key elements of your visualization:
 
 - **Size** - Important elements larger than supporting elements
 - **Color** - Highlight key data with contrasting colors; use muted tones for context
@@ -129,17 +145,11 @@ All elements of a map should work together:
 - **Title** - Clear, specific (not "US Population" but "US Population Growth, 2010-2020")
 - **Legend** - Essential but not intrusive; only show what's necessary. Sometimes the legend can be part of the explanatory text.
 - **Data Sources** - Always cite your data sources
-- **Annotations** - Use strategically to highlight key insights without overwhelming
+- **Annotations** - Use strategically to highlight key insights or point the reader to key information
 - **Color scheme** - Consider colorblind-friendly palettes
 
-A reminder of some basic design principles
-
-- **Consistency** - Use the same colors and symbols throughout a series of maps/charts
-- **Balance** - Distribute visual weight; avoid one-sided emphasis
-- **Rhythm** - Repetitive patterns (when intentional) can emphasize patterns in data
-- **Gestalt Principles** - Humans group similar elements together; use this intentionally
-
-Viewers naturally scan visualizations with a specific eye pattern. By understanding this, you can guide them to your key insights first, then let them explore details. This makes your visualization more persuasive and memorable.
+# Examples
+Let's look at some good and bad maps. There are lot of heinous maps out there that are cluttered, trying to convey too much information, take too long to interpret, or don't interpret anything ({numref}`terrible`). 
 
 :::{figure} /figures/datavis/uk.png
 :label: terrible
@@ -148,25 +158,8 @@ Viewers naturally scan visualizations with a specific eye pattern. By understand
 A map showing absolutely nothing. From  Twitter's terriblemaps.
 :::
 
-# Bad Map Lessons
-Let's look at some examples. There are lot of heinous maps out there that are cluttered, trying to convey too much information, take too long to interpret, or don't interpret anything ({numref}`terrible`). 
-
-## Principles (MOVE THIS TO SECTION ABOVE)
-Although the ArcGIS pro layout interface is easier to use than QGIS, let's ignore that and just borrow some great layout suggestions from [John Nelson](https://www.youtube.com/@JohnNelsonMaps) ({numref}`principle-table`).
-
-:::{table} Principles of sound map layouts. Adapted from John Nelson's [ArcGIS Pro Layout Makeover](https://www.youtube.com/watch?v=q93ZAFoS_bc&t=10s).
-:label: principle-table
-:align: center
-
-| Principle | Details |
-|-----------|---------|
-| Composition | - Overall, balance the composition <br>- Prioritize map size<br>- Area of interest best fit = layout orientation<br>- Use surrounds as balancing agents<br>- Use layout guides |
-| Text | - Only key words as title<br>- Secondary context as sub-title<br>- Eliminate, distill, or defer paragraphs<br>- Integrate annotation <br>- Include attribution |
-| Surrounds | - Remove unnecessary borders, backgrounds, and neatlines<br>- Simplify the legend and  overview<br>- Remove the north arrow, scalebar, and photographs |
-:::
-
-## Examples
-Let's explore some of the details of these principles and suggestions with an example. {numref}`bad` shows many things wrong you can do with a map from too many colors, excessive text, hard to read legend, and confusing data layers, among other things. Overall, it's just trying to show too many layers and combining data that may or may not be related and certainly not viewable, understandable in a static map. There are random labels of fires, some text that overlaps and unless you know the area, it's hard to tell where the map is located. The only thing this map gets kudos for is 80's ski clothing color styling!
+## Bad-un
+Let's explore some of the details of these principles and suggestions with an example. {numref}`bad` shows many things wrong you can do with a map from too many colors, excessive text, hard to read legend, and confusing data layers. Overall, it's just trying to show too many layers and combining data that may or may not be related and certainly not viewable, understandable in a static map. There are random labels of fires, some text that overlaps and unless you know the area, it's hard to tell where the map is located. The only thing this map gets kudos for is 80's ski clothing color styling!
 
 :::{figure} /figures/datavis/superbad.png
 :label: bad
@@ -175,6 +168,7 @@ Let's explore some of the details of these principles and suggestions with an ex
 A terrible map!
 :::
 
+## Good-un
 Let's see if we can simplify it to make it a little more readable. In the new map, we've simplified in a lot of different ways {numref}`better`. First we removed the north arrow, scale bar, much of the purple text, and background colors. We also removed the credits, something we normally would not recommend, but the credits were quite long and it was easier to remove them, unclutter the map and move to the figure caption. We added an inset map showing location of the area of interest that is highlighted with a clearer border and a simplified base map, focusing the reader on the area where the action is. We clarified the title as well. Legend entries are simplified and fewer. We used guides to align the legend and inset map as well as the legend and text to help balance the overall items in the map. It's not perfect (yet) but it is much easier to interpret.
 
 :::{figure} /figures/datavis/super.png
@@ -184,4 +178,7 @@ Let's see if we can simplify it to make it a little more readable. In the new ma
 A map of fire impacts on disadvantaged communities. Credits: ESRI, Tiger Lines, USGS, NASA, TomTom, Garmin, OSM, GIS user community.
 :::
 
-In this example, the base map could be cleaned up a bit more and the labels could use a little better detail or removed and added back in with key towns or places highlighted
+In this example, the base map could be cleaned up a bit more and the labels could use a little better detail or removed and added back in with key towns or places highlighted.
+
+# Strategies
+You don't have to be the most amazing graphic designer, but practicing your craft, getting your maps out there for feedback, and adapting great designs all help.

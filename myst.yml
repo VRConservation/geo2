@@ -31,7 +31,7 @@ project:
         - file: chapters/09_R.md
         - file: chapters/10_field.md
         - file: chapters/11_datavis.md
-        - file: chapters/11_future.md
+        - file: chapters/12_future.md
     - title: Appendices
       children:
         - file: z_appendices/appendix1.md

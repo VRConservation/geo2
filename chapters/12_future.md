@@ -2,11 +2,11 @@
 title: Future
 subject: 
 subtitle: The future of open-source geospatial software
-short_title: 11. Future
+short_title: 12. Future
 exports:
     - format: typst
       template: lapreprint-typst
-      output: export/11_future.pdf
+      output: export/12_future.pdf
 ---
 
 # Future
