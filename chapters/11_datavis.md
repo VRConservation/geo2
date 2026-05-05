@@ -1,7 +1,7 @@
 ---
 title: Field
 subject: 
-subtitle: A Primer on Effective Data Visualization
+subtitle: A Primer on Effective Geospatial Data Visualization
 short_title: 11. Data Visualization
 exports:
     - format: typst
@@ -27,6 +27,7 @@ Generally the biggest plus to using FOSS tools is they're free and flexible, kee
 | 🟢 Open-source | 🔴 Can frequently fail |
 | 🟢 Learning code is fun | 🔴 Some software not updated |
 | 🟢 Flexible | 🔴 Unavailable tools |
+:::
 
 ## Purpose & Audience
 Define your message before you design. Every effective map or chart begins with a clear understanding of:
@@ -54,17 +55,12 @@ Common distortions to avoid include
 - Area/volume charts that don't scale properly with data
 - Cherry-picked time ranges or data subsets without context
 
-According to @tufte the Lie Factor is defined as:
-
-```
-Size of effect shown in graphic / Size of effect in data
-```
-A value of 1.0 indicates accurate data representation.
+According to @tufte the Lie Factor = Size of effect shown in graphic / Size of effect in data with a value of 1.0 indicating accurate data representation.
 
 ## Visual Encoding
 The way you encode data visually determines how effectively viewers can extract information. Different visual variables work better for different types of data. Research in graphical perception shows that certain visual properties are processed pre-attentively (instantly, without conscious effort). Bertin's foundational work established that visual encoding must match the logical structure of the data being represented. This principle remains central to modern cartography and information design [@bertin]. Using the wrong encoding forces viewers to work harder to understand your data. These visual properties encode different types of information at different effectiveness levels {numref}`variables`.
 
-:::{table} Visual variables [from @bertin].
+:::{table} Visual variables [@bertin].
 :label: variables
 :align: center
 
