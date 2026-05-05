@@ -3,6 +3,10 @@ title: Python
 subject: 
 subtitle: Python for data analsyis and visualization
 short_title: 5. Python
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/05_python.pdf
 ---
 
 Python is widely applicable and used in the geospatial community. ArcGIS Pro has a Python package called Arcpy, and QGIS has a package named PYQGIS. It could be me, but I tried using Arcpy, read through and tried the tutorials from an entire Arcpy book, and struggled using ESRI notebooks. The language didn't stick with me, and it was overly complicated. Sure, you could run an analysis tool and copy the Arcpy code into a notebook to modify it, but I had a 'block' developing code blocks.

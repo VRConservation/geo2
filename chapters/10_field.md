@@ -3,6 +3,10 @@ title: Field
 subject: 
 subtitle: Guide to conducting field surveys using open-source tools
 short_title: 10. Field
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/10_field.pdf
 ---
 
 # Background

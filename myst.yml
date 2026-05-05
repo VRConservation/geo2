@@ -30,6 +30,7 @@ project:
         - file: chapters/08_aiml.md
         - file: chapters/09_R.md
         - file: chapters/10_field.md
+        - file: chapters/11_datavis.md
         - file: chapters/11_future.md
     - title: Appendices
       children:

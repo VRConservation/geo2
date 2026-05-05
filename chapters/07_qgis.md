@@ -3,6 +3,10 @@ title: QGIS
 subject: 
 subtitle: A powerful desktop GIS software infinitely customizable with plugins
 short_title: 7. QGIS
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/07_qgis.pdf
 ---
 
 # Background

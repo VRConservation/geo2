@@ -3,6 +3,10 @@ title: Pros & Cons
 subject: 
 subtitle: Pluses and minuses of using open-source geospatial software
 short_title: 4. Pros & Cons
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/04_proscons.pdf
 ---
 
 ## Open source vs. paid

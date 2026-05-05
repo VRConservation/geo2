@@ -3,6 +3,10 @@ title: SQL
 subject: 
 subtitle: The language to learn for geospatial analysis!
 short_title: 6. SQL
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/06_sql.pdf
 ---
 
 # New

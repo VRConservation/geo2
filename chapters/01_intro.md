@@ -3,9 +3,13 @@ title: FOS Geospatial Tools
 subject: 
 subtitle: A handbook for geospatial practitioners and scientists
 short_title: 1. Introduction
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/01_intro.pdf
 ---
 
-Welcome to Free and Open Source Geospatial Tools. This book provides resources and examples of open-source geospatial software and solutions. 
+Welcome to Free and Open Source Geospatial Tools v 2.0. This book provides resources and examples of open-source geospatial software and solutions and is updated from the version published in 2024. 
 
 # Support
 This book is free to use for anyone. If you want to support, donate, or buy me a coffee, please visit my [paypal](https://paypal.me/3pointxyz) site. I will be adding chapters and resources in the future. Please share the book with others who might benefit from reading it. I appreciate your support!

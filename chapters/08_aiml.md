@@ -3,6 +3,10 @@ title: AIML
 subject: 
 subtitle: Can artificial intelligence revolutionize the geospatial world? 
 short_title: 8. AIML
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/08_aiml.pdf
 ---
 
 :::{image} /figures/ai.png

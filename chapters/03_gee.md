@@ -3,6 +3,10 @@ title: Google Earth Engine
 subject: 
 subtitle: Introduction to geospatial analysis in the cloud using Google Earth Engine
 short_title: 3. GEE
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/03_gee.pdf
 ---
 
 
