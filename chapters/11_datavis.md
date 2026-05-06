@@ -1,8 +1,8 @@
 ---
-title: Field
-subject: 
+title: Data Visualiation
+subject: Data
 subtitle: A Primer on Effective Geospatial Data Visualization
-short_title: 11. Data Visualization
+short_title: 11. Visualization
 exports:
     - format: typst
       template: lapreprint-typst
@@ -148,7 +148,7 @@ All elements of a map should work together:
 - **Annotations** - Use strategically to highlight key insights or point the reader to key information
 - **Color scheme** - Consider colorblind-friendly palettes
 
-# Examples
+# Examples OJO NEED TO CHANGE THESE MAPS TO QGIS
 Let's look at some good and bad maps. There are lot of heinous maps out there that are cluttered, trying to convey too much information, take too long to interpret, or don't interpret anything ({numref}`terrible`). 
 
 :::{figure} /figures/datavis/uk.png
@@ -179,6 +179,9 @@ A map of fire impacts on disadvantaged communities. Credits: ESRI, Tiger Lines, 
 :::
 
 In this example, the base map could be cleaned up a bit more and the labels could use a little better detail or removed and added back in with key towns or places highlighted.
+
+# Web
+These are great visualization techniques for static maps, but what about interactive web-based maps. How do you that with FOSS resources?
 
 # Strategies
 You don't have to be the most amazing graphic designer, but practicing your craft, getting your maps out there for feedback, and adapting great designs all help.
