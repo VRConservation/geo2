@@ -1,7 +1,7 @@
 ---
-title: Data Visualiation
-subject: Data
-subtitle: A Primer on Effective Geospatial Data Visualization
+title: Effective Data Visualiation
+subject: Visualization
+subtitle: A Primer with How-to Examples
 short_title: 11. Visualization
 exports:
     - format: typst
@@ -24,6 +24,10 @@ Generally, the biggest plus to using FOSS tools is they're free and flexible, ke
 | 🟢 Flexible             | 🔴 Unavailable tools |
 :::
 
+You may also find that data analysis is easier to do with FOSS tools, but visualization may be best with some proprietary formats. For instance, QGIS has an excellent layout format, but it's not entirely intuitive nor is it as easy to use as the layouts in ArcGIS Pro[^arc]. The same could be said for Inkscape vs. Illustrator, although the exorbitant cost of the latter does not justify ease-of-use difference. Inkscape, in fact, can pretty much do anything you really need post layout for a map.
+
+[^arc]: ArcGIS Pro layout does have several very annoying features that you cannot disable in settings or automate out. One is the default border around any map that you add. You then have to go into properties and turn off the border, which is unnecessary and a waste of time. The other is the service layer credits that you have to click on dynamic text, search for service layer credits, and then click on the credits to modify them. This automatically reconfigures the box that if you try to adjust makes the text gigantic. Again, there's no way to disable, automate, or quickly change this annoying feature. 
+
 # Principles
 > "Because the world around us is a complex one, it would be virtually impossible to simply place a small version of it on a map...Consequently all maps are abstractions of reality and form." @field
 
@@ -43,8 +47,8 @@ FOSS is really just the tools you use to convey your information and you can mak
 ## Purpose & Audience
 Define your message before you design. Every effective map or chart begins with a clear understanding of:
 
-- **What is the story?** - What insight or finding do you want to communicate?
-- **Who is the audience?** - What is their background and knowledge level?
+- **What is the story?**—What insight or finding do you want to communicate?
+- **Who is the audience?**—What is their background and knowledge level?
 - **What action or decision** will this visualization support?
 
 According to cartographic design theory, a map or chart that cannot stand alone or fails to communicate a specific message to its intended audience has failed in its primary purpose—regardless of its aesthetic beauty or technical sophistication [@bertin; @tufte].
@@ -54,10 +58,10 @@ Represent data truthfully and avoid distortion. It is easy to lie with maps, alt
 
 The most important rule in visualization is that your visualization must not lie. This means:
 
-- **Accurate scaling** - Visual dimensions must be proportional to data values
-- **Proper context** - Show data in appropriate context; don't cherry-pick ranges
-- **No misleading effects** - Avoid visual tricks that exaggerate or minimize differences
-- **Document your methods** - Clearly explain data sources, processing, and any transformations
+- **Accurate scaling**—Visual dimensions must be proportional to data values
+- **Proper context**—Show data in appropriate context; don't cherry-pick ranges
+- **No misleading effects**—Avoid visual tricks that exaggerate or minimize differences
+- **Document your methods**—Clearly explain data sources, processing, and any transformations
 
 Common distortions to avoid include
 
@@ -98,24 +102,25 @@ Edward Tufte's foundational concept of the data-ink ratio advocates for maximizi
 
 Some examples of items to eliminate:
 
-- Chartjunk - Decorative elements that don't convey data (excessive text, north arrows, scale bars, 3D effects, background images, unnecessary grid lines)
-- Redundant encoding - Showing the same data in multiple ways
-- Competing visual elements - Elements that distract from the main message
-- Excessive labeling - Text that clutters rather than clarifies
+**General**
+- Chart junk—Decorative elements that don't convey data (excessive text, north arrows, scale bars, 3D effects, background images, unnecessary grid lines)
+- Redundant encoding—Showing the same data in multiple ways
+- Competing visual elements—Elements that distract from the main message
+- Excessive labeling—Text that clutters rather than clarifies
 
-**For Maps:**
+**Maps**
 - Remove unnecessary boundary lines
 - Use basemap details that provide context (not distraction)
 - Simplify your color scheme
 - Zoom to your area of interest
-- Clear, minimal labeling
+- Utilize clear, minimal labeling
 
-**For Charts:**
+**Charts**
 - Remove decorative gridlines (or make them subtle)
 - Use only the necessary axes
 - Choose bar charts or dot plots over pie charts (when comparing values)
-- Consistent, limited color palettes
-- One insight per chart
+- Select consistent, limited color palettes
+- Create one insight per chart
 
 :::{important} A word about north arrows & scale bars 🧭
 :class: dropdown
@@ -127,28 +132,28 @@ Guide viewer attention and integrate all elements intentionally. Don't add items
 
 Viewers naturally scan visualizations with a specific eye pattern. By understanding this, you can guide them to your key insights first, then let them explore details. This makes your visualization more persuasive and memorable. Basic design principles to aid your design include
 
-- **Consistency** - Use the same colors and symbols throughout a series of maps/charts
-- **Balance** - Distribute visual weight; avoid one-sided emphasis
-- **Rhythm** - Repetitive patterns (when intentional) can emphasize patterns in data
-- **Gestalt** - Gestalt principles describe how humans perceive and organize visual organization. Some of these include linking similar elements, symmetry, proximity, and continuity. Use these when organizing map elements.
+- **Consistency**—Use the same colors and symbols throughout a series of maps/charts
+- **Balance**—Distribute visual weight; avoid one-sided emphasis
+- **Rhythm**—Repetitive patterns (when intentional) can emphasize patterns in data
+- **Gestalt**—Gestalt principles describe how humans perceive and organize visual organization. Some of these include linking similar elements, symmetry, proximity, and continuity. Use these when organizing map elements.
 
 Use the following to emphasize importance or lead the viewer to key elements of your visualization:
 
-- **Size** - Important elements larger than supporting elements
-- **Color** - Highlight key data with contrasting colors; use muted tones for context
-- **Position** - Place primary insights prominently (top-left for readers of left-to-right languages)
-- **Contrast** - Use white space and contrast to separate important information
-- **Saturation** - More saturated colors draw attention; desaturated colors recede
+- **Size**—Important elements larger than supporting elements
+- **Color**—Highlight key data with contrasting colors; use muted tones for context
+- **Position**—Place primary insights prominently (top-left for readers of left-to-right languages)
+- **Contrast**—Use white space and contrast to separate important information
+- **Saturation**—More saturated colors draw attention; desaturated colors recede
 
 All elements of a map should work together:
 
-- **Title** - Clear, specific (not "US Population" but "US Population Growth, 2010-2020")
-- **Legend** - Essential but not intrusive; only show what's necessary. Sometimes the legend can be part of the explanatory text.
-- **Data Sources** - Always cite your data sources
-- **Annotations** - Use strategically to highlight key insights or point the reader to key information
-- **Color scheme** - Consider colorblind-friendly palettes
+- **Title**—Clear, specific (not "US Population" but "US Population Growth, 2010-2020")
+- **Legend**—Essential but not intrusive; only show what's necessary. Sometimes the legend can be part of the explanatory text.
+- **Data Sources**—Always cite your data sources
+- **Annotations**—Use strategically to highlight key insights or point the reader to key information
+- **Color scheme**—Consider colorblind-friendly palettes
 
-# Examples OJO NEED TO CHANGE THESE MAPS TO QGIS
+# Examples
 Let's look at some good and bad maps. There are lot of heinous maps out there that are cluttered, trying to convey too much information, take too long to interpret, or don't interpret anything ({numref}`terrible`). 
 
 :::{figure} /figures/datavis/uk.png
@@ -171,7 +176,7 @@ A terrible map!
 ## Good-un
 Let's see if we can simplify it to make it a little more readable. In the new map, we've simplified in a lot of different ways {numref}`better`. First we removed the north arrow, scale bar, much of the purple text, and background colors. We also removed the credits, something we normally would not recommend, but the credits were quite long and it was easier to remove them, unclutter the map and move to the figure caption. We added an inset map showing location of the area of interest that is highlighted with a clearer border and a simplified base map, focusing the reader on the area where the action is. We clarified the title as well. Legend entries are simplified and fewer. We used guides to align the legend and inset map as well as the legend and text to help balance the overall items in the map. It's not perfect (yet) but it is much easier to interpret.
 
-:::{figure} /figures/datavis/super.png
+:::{figure} /figures/datavis/good.png
 :label: better
 :width: 700px
 :align: center
@@ -179,6 +184,26 @@ A map of fire impacts on disadvantaged communities. Credits: ESRI, Tiger Lines, 
 :::
 
 In this example, the base map could be cleaned up a bit more and the labels could use a little better detail or removed and added back in with key towns or places highlighted.
+
+### QGIS AOI
+Despite what I said about ArcGIS Pro's layout being easier to use than QGIS, there is a very useful feature in QGIS that allows you to easily highlight an area of interest on a map: inverted polygon for a vector layer. In the good map layout example, let's see how to use this ({numref}`aoi-vis`).
+
+:::{figure} /figures/datavis/aoi.png
+:label: aoi-vis
+:width: 650px
+:align: center
+Layer styling effects for an offset gray aoi border.
+:::
+
+Here are the steps to a gray-ish offset for the aoi:
+
+1. Select inverted polygons in the symbol categorization pull down menu
+2. Click on Simple Fill below fill and below that in the Symbol layer type change to Shapeburst fill
+3. In the gradient colors section, change both colors to black with the second black changed to full opacity, e.g., move the opacity slider all the way to the left so that color is transparent.
+4. Under shading style click Set distance and leave a 5 mm or if you want to minimize the shading reduce or maximize increase it.
+5. Voila!
+
+The aoi border will now look something similar to {numref}`better`.
 
 # Web
 These are great visualization techniques for static maps, but what about interactive web-based maps. How do you that with FOSS resources?
