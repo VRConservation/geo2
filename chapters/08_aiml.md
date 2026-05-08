@@ -14,14 +14,21 @@ exports:
 :align: center
 :::
 
-## Future edition
+# Jury (sorta) Still Out
+Two years ago in 2024 I concluded that AI wasn't really there for geospatial data analysis and visualization. It still seems that many LLMs don't entirely understand geospatial data or geodetic formulas, mostly because they have been trained on text and not geospatial data like coordinates and projections. But in the past two years there has been much progress and there are more examples where entering language into a prompt will produce accurate maps. 
+
+In an example of research bridging the gap of where things are located spatially, researchers tested LLMs using applied world knowledge of specific coordinates vs. 'pure gps', such as geometric math, e.g., calculating distances [@truong]. They found that models are better at the applied track to guess locations but could not do pure gps. They also found that LLMs are very good at pinpointing places for a given coordinate, but accuracy declines when asked to locate a specific city. For more accurate models that do what you need, it's likely you'll need to build and adapt your own.
+
 Whether AI can revolutionize the geospatial world is a good question. @aiscan concluded that AI will lead to beneficial outcomes, however, it is not a panacea, and measures must be put into place for equitable access and deployment. In a review of the same paper, Frank van der Most points out that only two of the 21 applications cited as significant are focused on implementing solutions [@fvdm].
 
 There have been many attempts and big claims in the geospatial world, but as of 2024, I have to conclude it isn't quite ready for primetime (although this is rapidly changing)! Machine learning (ML) is well developed in the free and open source (cf. chapters or tutorials from Leafmap and the R geocomputation book). ML is often conflated with AI, but it's not the same. Artificial intelligence for geospatial is at the gee-whiz stage, but it's not amazing. One recent example showed prompt engineering with GeoGPT to produce some ok chloropleth maps that would take the same amount of time to assemble using the appropriate dataset and software highlighted in this book. Plus, taking a little time to run the code and do exploratory data analysis always allows you to know the data, which is something that doesn't happen when you ask a question and get a map. Also, GeoGPT is not free, nor is it open source!
 
+## Exceptions
 An exception to the usefulness side I've seen with AI is [Bunting Lab's](https://buntinglabs.com/) autocomplete for map digitization, which installs as a QGIS plugin. This isn't a free tool, but it seems like it would certainly be worth its weight in gold if you needed to do a lot of map digitizing, taking much of the tedious manual labor out of this task. Another exception is where AI generates cut-and-paste codeblocks that throw fewer errors than the nonsense generated from prompts a few months ago or get you unstuck when an approach is not working.
 
-Due to AI's underwhelming but promising status to date, I will wait another year to see if more compelling examples arise. I've provided a few promising links. Overall, AI could help democratize geospatial analysis by lowering the cost of entry to both data and coding.
+Another recent except is GeoAgent, a QGIS plugin, allows users to input requests, queries, and analyses by typing or voice [@wu]. The plugin design and UI are excellent and easy to use, although I've found entering the secret keys to start to have some errors. The documentation has links to a video [tutorial](https://www.youtube.com/watch?v=5zkXQlHUsu8) on YouTube that will get you up and running quickly.
+
+Overall, AI still has a ways to go with geospatial analysis. AI could help democratize geospatial analysis by lowering the cost of entry to both data and coding, but it seems like many of the companies involved are going down for profit routes rather than free and open source.
 
 ## Resources
 - NASA/Microsoft VEDA dashboard and earth copilot

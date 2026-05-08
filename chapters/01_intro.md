@@ -27,16 +27,20 @@ This book is intended for beginners with some knowledge of desktop tools such as
 ## Chapters
 The book contains the following chapters:
 
-1. 📖**FOSS**. This is an introduction to Free and open-source software, a little about my journey in this field, and my use of the tools in the book.
-2. 🌍**Google Earth Engine**. Google Earth Engine is an incredible resource for its large data catalog and cloud-based geospatial analysis. This chapter provides some quick tips and steps to get started.
-3. 🌟/⚠️**Pros & Cons**. Outlines the pros and cons of free and open source vs. paid geospatial software.
-4. 🐍**Python**. How to use Python for geospatial data analysis and visualization with various libraries.
-5. 🦆**SQL**. The universal database Structured Query Language (SQL) with a focus on DuckDB.
-6. 🌐**QGIS**. An introduction to get started with this powerful desktop GIS.
-7. 🤖/🛠**AIML**. Artificial intelligence (AI) and machine learning (ML) are popular right now, right? Here's how to use these tools to complement, not replace, your work.
-8. 📶**R**. A programming language universally adopted by academics, R is easy to use and start with and has many statistical computing, data visualization, and geospatial packages.
-9. 🔎**Field Surveys**. Your guide to open-source field data collection.
-10. 🔮**Future**. Where your journey might lead with other established free and open-source geospatial software. We'll also explore the future of free and open-source geospatial software.
+1. **Introduction**. This chapter.
+2. 📖**FOSS**. This is an introduction to Free and open-source software, a little about my journey in this field, and my use of the tools in the book.
+3. 🌍**Google Earth Engine**. Google Earth Engine is an incredible resource for its large data catalog and cloud-based geospatial analysis. This chapter provides some quick tips and steps to get started.
+4. 🌟/⚠️**Pros & Cons**. Outlines the pros and cons of free and open source vs. paid geospatial software.
+5. 🐍**Python**. How to use Python for geospatial data analysis and visualization with various libraries.
+6. 🦆**SQL**. The universal database Structured Query Language (SQL) with a focus on DuckDB.
+7. 🌐**QGIS**. An introduction to get started with this powerful desktop GIS.
+8. 🤖/🛠**AIML**. Artificial intelligence (AI) and machine learning (ML) are popular right now, right? Here's how to use these tools to complement, not replace, your work.
+9. 📶**R**. A programming language universally adopted by academics, R is easy to use and start with and has many statistical computing, data visualization, and geospatial packages.
+10. 🔎**Field Surveys**. Your guide to open-source field data collection.
+11. 🚁 🛸 🎮**Drones**. Using drones for field survey and developing high resolution geospatial data. Chapter in draft, coming soon.
+12. 🌾**GRASS**. Using GRASS GIS in your workflows and data analysis. Chapter in draft, coming soon.
+13. 📊 📈**Visualiztion**. Effective principles for geospatial data visualization
+14. 🔮**Future**. Where your journey might lead with other established free and open-source geospatial software. We'll also explore the future of free and open-source geospatial software.
 
 ## MyST
 This book was made using [MyST](https://mystmd.org/), a free and open-source package that lets anyone build beautiful, publication-quality books and articles from computational content. Thank you, MyST for this wonderful resource!

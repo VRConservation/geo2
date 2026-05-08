@@ -2,13 +2,13 @@
 title: Effective Data Visualiation
 subject: Visualization
 subtitle: A Primer with Examples
-short_title: 11. Visualization
+short_title: 13. Visualization
 exports:
     - format: typst
       template: lapreprint-typst
-      output: export/11_datavis.pdf
+      output: export/13_datavis.pdf
 ---
-# FOSS Visualization
+# FOSS
 There are a lot of ways to visualize data, some of them quite expensive and proprietary. Then there are free and open-source software tools that are increasingly useful and sometimes on par with paid or subscription software. 
 
 Generally, the biggest plus to using FOSS tools is that they're free and flexible, keep you in charge of the data and what it looks like, and your data doesn't have to go to a cloud server to be used by whatever AI company to train their models {numref}`pluses`. The biggest disadvantage is having to often rely on code and the terminal to run the tools. However, the latter is becoming less of a barrier with large language models (LLMs) such as Claude, script snippets, and other tricks we'll show you that make life easier in the FOSS world.
@@ -33,7 +33,7 @@ You may also find that data analysis is easier with FOSS tools, but visualizatio
 
 FOSS is really just the tools you use to convey your information, and you can make bad maps with paid tools and FOSS tools. What matters are the principles of map design. Maps, as abstractions of reality, give their authors a great deal of responsibility and power. This can be abused, e.g., maps that lie, suck, or are very hard to decipher. John Nelson outlines three key components of an effective map layout: balancing the composition, keeping components to a minimum, and minimizing text ({numref}`principle-table`).
 
-:::{table} Principles of sound map layouts ([John Nelson](https://www.youtube.com/watch?v=q93ZAFoS_bc&t=10s)).
+:::{table} Principles of sound map layouts [@nelson].
 :label: principle-table
 :align: center
 
