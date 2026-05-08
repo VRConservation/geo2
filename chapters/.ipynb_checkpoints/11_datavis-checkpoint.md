@@ -210,5 +210,5 @@ The aoi border will now look something similar to {numref}`better`.
 # Web
 Another option from static maps is creating interactive web maps. QGIS has a basic plugin called qgis2web that creates an HTML version of your map. You can turn the legend on and off and pick the layers and popups from them to feature in the map. Other web-based options include Leafmap, MapLibre, kepler.gl, DeckGL, and Solara, among others.
 
-# Map Craft
-You don't have to be the most amazing graphic designer, but practicing your craft, getting your maps out there for feedback, and adapting great designs all help. Whether you're using FOSS tools or proprietary software, the principles of effective visualization—clear purpose, data integrity, thoughtful encoding, simplicity, and hierarchy—remain constant and guide every design decision you make. By combining these foundational principles with continuous practice and a willingness to learn from both successes and failures, you'll develop the skills to create compelling visualizations that communicate your spatial data stories with clarity and impact.
+# Strategies
+You don't have to be the most amazing graphic designer, but practicing your craft, getting your maps out there for feedback, and adapting great designs all help.
