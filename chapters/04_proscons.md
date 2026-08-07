@@ -29,6 +29,7 @@ Table 1. Pros and cons of select geospatial software providers.
 | Felt | Use, Vis, QGIS integ | Price, Sharing, Long-term? | $360-1,080/user/yr |
 | GEE  | Cloud, Support, Colab | Javascript, Cost | Free to mucho |
 | Geemap | Use, Support, GEE/Colab integration | Setup in windows | Free |
+| GeoLibre | Multiple formats, browser run, complex analyses | Has some minor bugs | Free |
 | Leafmap | Use, Feature-rich, one line code solutions | CLI, IDE setup in Windows | Free |
 | Planet | Vis, Data | Haven't used | High |
 | Post-GIS | Use, Fast, QGIS integration, Industry Standard | UI | Free |
