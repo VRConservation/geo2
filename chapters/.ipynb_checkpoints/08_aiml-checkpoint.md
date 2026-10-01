@@ -26,7 +26,7 @@ The geospatial world has seen many attempts and big claims. In 2024, I concluded
 
 :::{caution} Using AI in GeoLibre Works, but...
 :class:dropdown
-It's expensive! In initial tests with GeoLibre and Claude, I added two vector datasets, a raster dataset, and ran two simple SQL queries. Once connected with the API key, it worked quickly and smoothly, and Claude could find the datasets online, clip or query them to an AOI, and run summary statistics on tessellated hexagons. That does come at some cost. The simple analysis/data additions cost $2.90, not much, but that would add up with a little more analysis. It felt like if you needed AI to do that kind of geospatial analysis, you might be better off paying someone to do it for you.
+In initial tests with GeoLibre and Claude, I added two vector datasets, a raster dataset, and ran two simple SQL queries. Once connected with the API key, it worked quickly and smoothly, and Claude could find the datasets online, clip or query them to an AOI, and run summary statistics on tessellated hexagons. That does come at some cost. The simple analysis/data additions cost $2.90, not much, but that would add up with a little more analysis. It felt like if you needed AI to do that kind of geospatial analysis, you might be better off paying someone to do it for you.
 
 Setting it up through Ollama with local models took some time, and only works with models that have tools. I eventually tried adding free models such as qwen2.5:7b and llama3.2:3b. I was able to connect the qwen and llama models to GeoLibre, but they were exceptionally slow and only gave answers on how to run Python code to add two simple vector sets. Claude, on the other hand, just added the layers.
 
