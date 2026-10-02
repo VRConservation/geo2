@@ -30,7 +30,7 @@ It's expensive! In initial tests with GeoLibre and Claude, I added two vector da
 
 Setting it up through Ollama with local models took some time, and only works with models that have tools. I eventually tried adding free models such as qwen2.5:7b and llama3.2:3b. I was able to connect the qwen and llama models to GeoLibre, but they were exceptionally slow and only gave answers on how to run Python code to add two simple vector sets. Claude, on the other hand, just added the layers.
 
-QGIS has a model context protocol plugin that allows you to communicate between a model and QGIS. I have not tried it, but the setup documentation doesn't look very low friction.
+QGIS has a model context protocol plugin that allows you to communicate between a model and QGIS. I have not tried it yet. There's a [tutorial](https://courses.spatialthoughts.com/advanced-qgis.html#qgis-and-ai) from the always excellent folks at Spatial Thoughts on how to set it up with Claude. 
 :::
 
 Artificial intelligence for geospatial is at the gee-whiz stage, but it's not amazing. One recent example showed prompt engineering with GeoGPT to produce some ok chloropleth maps that would take the same amount of time to assemble using the appropriate dataset and software highlighted in this book. Plus, taking a little time to run the code and do exploratory data analysis always allows you to know the data, which is something that doesn't happen when you ask a question and get a map. Also, GeoGPT is not free, nor is it open source!
