@@ -1,7 +1,7 @@
 ---
 title: SQL
 subject: 
-subtitle: The language to learn for geospatial analysis!
+subtitle: The language to learn for geospatial data queries!
 short_title: 6. SQL
 exports:
     - format: typst
@@ -13,7 +13,7 @@ exports:
 SQL is pronounced 'sequel' and is short for Structured Query Language. I'm new to using SQL for geospatial analysis. Still, I am amazed at how easy it is to learn, how fast it analyzes large datasets, and how critical it is for data analysis. SQL is the universal database management language, so geospatial aside, if you work with data, you must learn how to use it. The basic structure of a SQL query is shown in the tips window. Initially, you use CREATE and SELECT * FROM for data exploration, followed by finer-scale querying.
 
 :::{tip} BASIC SQL QUERY STRUCTURE
-:class:dropdown:
+:class: dropdown
 CREATE TABLE IF NOT EXISTS tablename AS <br>
 SELECT * FROM ('path_to_file') <br>
 WHERE <br>
