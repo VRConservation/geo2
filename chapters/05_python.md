@@ -63,8 +63,10 @@ collection = "sentinel-2-l2a"
 bbox = [146.5, -43.6, 146.7, -43.4]
 ```
 
-```{hint} Use Earth Engine's inspector or the [polyline tool](https://www.keene.edu/campus/maps/tool/) to generate coordinates.
-```
+:::{hint} Coordinate Generate
+:class: dropdown
+Use Earth Engine's inspector or the [polyline tool](https://www.keene.edu/campus/maps/tool/) to generate coordinates.
+:::
 
 Search and load the data:
 
@@ -105,9 +107,10 @@ Accessing and sharing this code is another example of why free and open-source s
 ## Geemap
 Compared to JavaScript, Geemap makes it much easier to access, analyze, and visualize Earth Engine data within a Python package developed by [Qiusheng Wu](https://github.com/giswqs).
 
-```{admonition} Getting Started
+:::{admonition} Getting Started
+:class: dropdown
 Watch this [installation video](https://www.youtube.com/watch?v=gyQ6wBqYGks&list=PLAxJ4-o7ZoPeXzIjOJx3vBF0ftKlcYH9J&index=3) followed by this [vs code and github](https://www.youtube.com/watch?v=gyQ6wBqYGks&list=PLAxJ4-o7ZoPeXzIjOJx3vBF0ftKlcYH9J&index=3) video. If you already have an IDE, Miniconda, and virtual env's installed, go to the Geemap [installation](https://geemap.org/installation/) page.
-```
+:::
 
 Let's look at how to visualize the same map from Chapter 2 using Geemap. Open a Jupyter notebook and add the following code block:
 
@@ -130,7 +133,7 @@ Interactive map in Geemap.
 In the upper right corner of the map, click the wrench icon, then click the two encircling arrows box (bottom row, middle) to open the JavaScript to Python code converter ({numref}`convert`).
 
 ```{figure} /figures/python/convert.png
-:height: 300px
+:height: 400px
 :name: convert
 Text box converter for Earth Engine JavaScript to Python.
 ```
@@ -227,9 +230,10 @@ m.addLayer(dataset, vis_b, 'Belowground biomass carbon', False)
 ```
 Adding 'False' after the layer name still adds the layers to the map but turns them off by default. 
 
-```{admonition} Lambda Function
+:::{admonition} Lambda Function
+:class: dropdown
 Let's take another look at lambda functions for clipping rasters. Lambda functions are similar to other Python functions but are not bound to a name when run. Known as anonymous functions, they are used when you need a one-off function that isn't separately defined. In our case, the lambda function takes an image, clips it to the bounding box, and returns the clipped image. The map() function, not to be confused with the Map function in JavaScript, applies the function to every image in the ImageCollection.
-```
+:::
 
 ## Easier Bboxing
 Boots and cats, boots and cats, boots and cats. Yeah! No wait, it's bounding boxing, not beat boxing! As you can see in both examples, adding the code for a bounding box can be semi-painful. The [Polyline Tool](https://www.keene.edu/campus/maps/tool) lets you generate the needed code when you right-click each point in a polygon. 

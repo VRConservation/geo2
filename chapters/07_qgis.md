@@ -205,7 +205,9 @@ Export/Save Selected Features As.
 
 In the save dialog box, enter Format: Geopackage, File Name Sierra Clip (click the three dots to the right and navigate to the folder where you've saved the project), Layer name: Sierra Clip, and click ok. You should get a Layer Export success message at the top of the map window. 
 
-```{note} That's a lot of work to create hex layers; they're not even transverse hexagons! You can create hexbins with a click using kepler.gl within VS Code or in a Jupyter notebook.
+:::{tip} Creating hexbins
+:class: dropdown
+That's a lot of work to create hex layers; they're not even transverse hexagons! You can create hexbins with a click using kepler.gl within VS Code or in a Jupyter notebook.
 ```
 
 ### Attribute table edit

@@ -26,7 +26,7 @@ Nevertheless, given where the field seems to be headed, I will take a crack at i
 ## Hybrid Workflows
 Hybrid workflows between paid and open-source software are common, especially where paid offerings fall short or charge too much for analyses or imagery you use infrequently. As in geospatial workflows such as the Marin Forest Health Strategy (see box below), it is critical to combine qualitative and quantitative information and maximize the usefulness of geospatial data. Some hybrid workflows are common, e.g., SQL data queries followed by further analysis or visualization in Leafmap.
 
-:::{seealso} Marin Forest Health Strategy
+:::{seealso} Integrated Analysis: Marin Forest Health Strategy
 :class: dropdown
 The Marin Forest Health Strategy developed county-wide approaches for all public lands in the Northern California locale. Overarching ecosystem analyses of Douglas Fir, Bishop Pine, Coast Redwood, Sargent Cypress, and Oak Woodlands initiated the strategy and informed geospatial analyses and strategic restoration initiatives. A complete fire history was compiled from historical data and newspaper records, then digitized into a series of fire-dynamics maps. A fine-scale vegetation map developed by Tukman Geospatial was a critical foundation for nearly all the geospatial analysis and project planning. The strategy is available at One Tam's [Forest Health page](https://www.onetam.org/forest-health) and the geospatial analyses at the [Forest Health Web Map](https://parksconservancy.maps.arcgis.com/apps/instant/media/index.html?appid=283456ad496e4a999e74f9501468261c).
 :::

@@ -12,15 +12,15 @@ exports:
 # New
 SQL is pronounced 'sequel' and is short for Structured Query Language. I'm new to using SQL for geospatial analysis. Still, I am amazed at how easy it is to learn, how fast it analyzes large datasets, and how critical it is for data analysis. SQL is the universal database management language, so geospatial aside, if you work with data, you must learn how to use it. The basic structure of a SQL query is shown in the tips window. Initially, you use CREATE and SELECT * FROM for data exploration, followed by finer-scale querying.
 
-```{tip}
-**BASIC SQL QUERY STRUCTURE**<br>
+:::{tip} BASIC SQL QUERY STRUCTURE
+:class:dropdown:
 CREATE TABLE IF NOT EXISTS tablename AS <br>
 SELECT * FROM ('path_to_file') <br>
 WHERE <br>
 GROUP BY <br>
 ORDER BY desc <br>
 LIMIT
-```
+:::
 
 # DuckDB
 In this chapter, we will use [DuckDB](https://duckdb.org/) as the SQL software package. DuckDB is fast, works seamlessly with many programming languages, including Python, R, and JavaScript, and is easy to install. DuckDB also has a spatial extension for querying and analyzing geospatial data, which we will cover in this chapter. The big advantage of DuckDB is its speed in processing large datasets.
@@ -66,8 +66,10 @@ con.table('sawmill')
 
 Note that ./ reads the sawmill shapefile in the CurrentSawmill folder if you've cloned the repo to your local computer. If you downloaded a shp file in Windows to your Downloads folder, replace the path with where you've stored the shp files, for example, 'C:/Users/your_user_name/Downloads/shapefilename.shp'.
 
-```{tip} Duckdb can be run in the command line and through Python, as we do here. There are several ways to do this, but wrapping the commands in con.sql with parenthesis and two sets of double or single quotes is easier to code and read.
-```
+:::{tip} 
+:class: dropdown
+Duckdb can be run in the command line or in an IDE using Python, as we do here. There are several ways to do the latter, but wrapping the commands in con.sql with parenthesis and two sets of double or single quotes is easier to code and read.
+:::
 
 {numref}`sawmill` shows the tabular result after executing that codeblock. The output is truncated by rows and columns so it's often worthwhile viewing the table schema to inform future queries ({numref}`schema`).
 
