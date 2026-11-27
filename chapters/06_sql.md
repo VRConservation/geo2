@@ -10,7 +10,7 @@ exports:
 ---
 
 # New
-SQL is pronounced 'sequel' and is short for structure query language. I'm new to using SQL for geospatial analysis. Still, I am amazed at how easy it is to learn, how fast it analyzes large datasets, and how critical it is for data analysis. SQL is the universal database management language, so geospatial aside, if you work with data, you must learn how to use it. The basic structure of a SQL query is shown in the tips window. Initially, the CREATE and SELECT * FROM commands are used in data exploration, followed by finer-scale querying.
+SQL is pronounced 'sequel' and is short for Structured Query Language. I'm new to using SQL for geospatial analysis. Still, I am amazed at how easy it is to learn, how fast it analyzes large datasets, and how critical it is for data analysis. SQL is the universal database management language, so geospatial aside, if you work with data, you must learn how to use it. The basic structure of a SQL query is shown in the tips window. Initially, you use CREATE and SELECT * FROM for data exploration, followed by finer-scale querying.
 
 ```{tip}
 **BASIC SQL QUERY STRUCTURE**<br>
@@ -23,13 +23,13 @@ LIMIT
 ```
 
 # DuckDB
-In this chapter, we will use [DuckDB](https://duckdb.org/) as the SQL software package. DuckDB is fast, works seamlessly with many programming languages, including Python, R, and Javascript, and is easy to install. DuckDB also has a spatial extension to perform queries and analyze geospatial data, which we will look at in this chapter. The big advantage of DuckDB is its speed in processing large datasets.
+In this chapter, we will use [DuckDB](https://duckdb.org/) as the SQL software package. DuckDB is fast, works seamlessly with many programming languages, including Python, R, and JavaScript, and is easy to install. DuckDB also has a spatial extension for querying and analyzing geospatial data, which we will cover in this chapter. The big advantage of DuckDB is its speed in processing large datasets.
 
 ## Installation
 Installation is straightforward: follow the instructions for the command line or Python at the DuckDB installation [page](https://duckdb.org/docs/stable/guides/python/install.html).
 
-## Wood processing
-Let's move to an example from the University of California's Woody Biomass Utilization Group's Biomass Power Plant [Database](https://ucanr.edu/site/woody-biomass-utilization/california-forest-products-and-biomass-power-plant-map). What do mills have to do with forest conservation? We're not talking about rapacious clearcutting from the past but a sustainable forest management model that reduces wildfire and returns western forests to a healthier and more resilient state. Fires threaten most forests in the western United States due to more than a century of fire suppression. 
+## Wood Processing
+Let's move to an example from the University of California's Woody Biomass Utilization Group's Biomass Power Plant [Database](https://ucanr.edu/site/woody-biomass-utilization/california-forest-products-and-biomass-power-plant-map). What do mills have to do with forest conservation? We're not talking about rapacious clearcutting from the past, but a sustainable forest management model that reduces wildfire and returns western forests to a healthier, more resilient state. Fires threaten most forests in the western United States due to more than a century of fire suppression. 
 
 Through ecological thinning and prescribed fire, unhealthy forests can return to a natural range of variation by lowering competition across stands. This approach can reduce compounding stresses from drought, insect infestations, and wildfire and create more resilient forests [@north]. Thinning will produce large amounts of forest biomass that can be processed through community-based mills and biomass plants. Developing this infrastructure is one way to help solve the wildfire crisis threatening biodiversity and people.
 
@@ -64,7 +64,7 @@ con.sql('''
 con.table('sawmill')
 ```
 
-Note that ./ reads the sawmill shape file in the CurrentSawmill file if you've cloned the repo to your local computer. If you downloaded a shp file in Windows to your Downloads folder, replace the path to where you've stored the shp files, for example, 'C:/Users/your_user_name/Downloads/shapefilename.shp'.
+Note that ./ reads the sawmill shapefile in the CurrentSawmill folder if you've cloned the repo to your local computer. If you downloaded a shp file in Windows to your Downloads folder, replace the path with where you've stored the shp files, for example, 'C:/Users/your_user_name/Downloads/shapefilename.shp'.
 
 ```{tip} Duckdb can be run in the command line and through Python, as we do here. There are several ways to do this, but wrapping the commands in con.sql with parenthesis and two sets of double or single quotes is easier to code and read.
 ```
@@ -151,7 +151,7 @@ Sum of total megawats of biomass plants by county.
 ```
 
 ## Lewis's Woodpecker
-Lewis's Woodpecker (_Melanerpes lewis_) is a striking North American species of woodpecker named after 19th-century explorer Meriwether Lewis ({numref}`lewo`). Although locally common, its breeding and migratory habits are not extensively known. Lewis's Woodpeckers also engage in some un-woodpeckery behaviors such as hawking insects ([Wikipedia](https://en.wikipedia.org/wiki/Lewis%27s_woodpecker)). We'll examine a dataset of Lewis's species occurrence from eBird.
+Lewis's Woodpecker (_Melanerpes lewis_) is a striking North American species of woodpecker named after 19th-century explorer Meriwether Lewis ({numref}`lewo`). Although it is locally common, its breeding and migratory habits are not well known. Lewis's Woodpeckers also engage in some un-woodpeckery behaviors such as hawking insects ([Wikipedia](https://en.wikipedia.org/wiki/Lewis%27s_woodpecker)). We'll examine a dataset of Lewis's species occurrence from eBird.
 
 ```{figure} /figures/sql/lewo.jpg
 :height: 500px
@@ -181,7 +181,7 @@ con.install_extension("spatial")
 con.load_extension("spatial")
 ```
 
-The Lewis's csv file is quite large, but DuckDB quickly runs through its ~140k rows. Create a table called lewo, short for Lewis's Woodpecker. The csv file is in the repo's test folder. Note using ST_Point to assign the latitude and longitude columns to geometry.
+The Lewis's csv file is quite large, but DuckDB quickly runs through its ~140k rows. Create a table called lewo, short for Lewis's Woodpecker. The csv file is in the repo's test folder. Note that using ST_Point assigns the latitude and longitude columns to geometry.
 
 ```python
 # Create lewo table and assign points lat lon points to geometry
@@ -197,7 +197,7 @@ con.execute(sql)
 con.table("lewo")
 ```
 
-If the FROM "./lew/lewo.csv" statement throws an error, try replacing the file path by right-clicking the file in your computer and selecting copy path, then passing that file path in place of "./lewo/low.csv". For Windows, change the slashes to / instead of \ for the file path.
+If the FROM "./lew/lewo.csv" statement throws an error, try replacing the file path by right-clicking the file in your file manager and selecting copy path, then passing that file path in place of "./lewo/low.csv". In Windows, change the slashes from \ to / so the file paths are read correctly.
 
 Then, count the total observations by state ({numref}`lewo_state`).
 
@@ -245,14 +245,14 @@ Right-clicking the csv file and selecting View Map produces a heat map. It shows
 ```{figure} /figures/sql/wash.png
 :height: 500px
 :name: wash
-Distribution heatmap in Washington state of Lewis's Woodpecker.
+Distribution heatmap of Lewis's Woodpecker in Washington state.
 ```
 
-Hopefully, these examples are enough to get you started. The resources below have more detailed examples and videos to go deeper. Make sure to practice and try out queries, joins, and other spatial functions with different datasets, including geosjson and geoparquet, to go beyond using shp and csv files.
+Hopefully, these examples are enough to get you started. The resources below have more detailed examples and videos to go deeper. Make sure to practice and try out queries, joins, and other spatial functions with different datasets, including GeoJSON and GeoParquet, to go beyond using SHP and csv files.
 
 # Resources
+- **[Spatial Data Management with DuckDB](https://duckdb.gishub.org/)**. Authored by Qiusheng Wu, the book's code is available here, with more detailed information in the print versions. A great place to start if you just need DuckDB to run within a Python environment.
 - **[GEOG-414](https://geog-414.gishub.org/book/duckdb/01_duckdb_intro.html)**. The DuckDB portion of Qiusheng Wu's Geography 414 course is a recommended way to expand your spatial SQL knowledge.
-- **[Spatial SQL](https://spatial-sql.com/)**. Matt Forrest's text on using SQL in modern GIS is an excellent reference and starter for using SQL within a spatial context. Although the book could use a copyedit (many spelling errors) and better organization (figures disconnected from text, tutorials with more bullets/less text), everything is in the book that you will need to become a spatial SQL expert. The tutorials are relevant and guide you through critical beginner -> advanced workflows using spatial SQL.
+- **[Spatial SQL](https://spatial-sql.com/)**. Matt Forrest's text on using SQL in modern GIS is an excellent reference and a great starting point for using SQL in a spatial context. Although the book could use a copyedit (many spelling errors) and better organization (figures disconnected from text, tutorials with more bullets/less text), it includes everything you need to become a spatial SQL expert. The tutorials are relevant and guide you through critical beginner -> advanced workflows using spatial SQL.
 - **[SQL-QGIS Tip](https://twitter.com/spatialthoughts/status/1774833044396081189)**. You can use the 'Execute SQL' processing algorithm to run SQL queries on ANY vector layer within QGIS. Here's an example of calculating group statistics on a vector layer. This also allows you to run SQL queries in a model.
 - **[Mark Litwintschik](https://tech.marksblogg.com/duckdb-gis-spatial-extension.html)**. This great data and geospatial blog features several tutorials running the DuckDB spatial extension.
-- **[Lonboard](https://developmentseed.org/lonboard/latest/)**. Lonboard is a Python library for fast vector processing. The [DuckDB Spatial](https://developmentseed.org/lonboard/latest/examples/duckdb/) tutorial links Lonboard to DuckDB and Python to create a heatmap. 

@@ -9,12 +9,12 @@ exports:
       output: export/05_python.pdf
 ---
 
-Python is widely applicable and used in the geospatial community. ArcGIS Pro has a Python package called Arcpy, and QGIS has a package named PYQGIS. It could be me, but I tried using Arcpy, read through and tried the tutorials from an entire Arcpy book, and struggled using ESRI notebooks. The language didn't stick with me, and it was overly complicated. Sure, you could run an analysis tool and copy the Arcpy code into a notebook to modify it, but I had a 'block' developing code blocks.
+Python is widely applicable and used in the geospatial community. ArcGIS Pro has a Python package called Arcpy, and QGIS has a package named PYQGIS. It could be me, but I tried Arcpy, read through and followed the tutorials in an entire Arcpy book, and struggled with ESRI notebooks. The language didn't stick with me, and it was overly complicated. Sure, you could run an analysis tool and copy the Arcpy code into a notebook to modify it, but I had a 'block' developing code blocks.
 
-Then I found Geemap and Leafmap—incredible, user-friendly Python packages developed by Qiusheng Wu and available on GitHub at GISWQS. There are also clear tutorials at leafmap.org and geemap.org and videos at [Open Geospatial Solutions](https://www.youtube.com/@giswqs). Many analyses require only one line of code. Here, geospatial analysis using scripts just clicked for me, opening up another world to analyze geospatial data.
+Then I found Geemap and Leafmap—incredible, user-friendly Python packages developed by Qiusheng Wu and available on GitHub at GISWQS. There are also clear tutorials at leafmap.org and geemap.org and videos at [Open Geospatial Solutions](https://www.youtube.com/@giswqs). Many analyses require only one line of code. Here, geospatial analysis using scripts just clicked for me, opening up another world of geospatial data analysis.
 
 # Getting Started
-To be honest, getting started using a Windows computer was a total pain in the ass. So, if you're using Linux or Apple OS, setting things running will be much easier. It will take a few hours from scratch, but a great resource is at the University of Tennessee, Knoxville [Geog-414](https://geog-414.gishub.org/book/preface/software.html) course software web page. Scroll through the page to familiarize yourself with the commands. Near the bottom of the page is a series of videos to get you started, which is worth viewing and following. For some reason, I found that Miniconda didn't work well on my machine with Windows 11, but everything worked with Anaconda. 
+To be honest, getting started using a Windows computer was a total pain in the ass. So, if you're using Linux or Apple OS, getting things running will be much easier. It will take a few hours to set up from scratch, but a great resource is the University of Tennessee, Knoxville [Geog-414](https://geog-414.gishub.org/book/preface/software.html) course software web page. Scroll through the page to familiarize yourself with the commands. Near the bottom of the page is a series of videos to get you started, which are worth viewing and following. For some reason, Miniconda didn't work well on my Windows 11 machine, but Anaconda worked. 
 
 ```{important} Getting started quick guides can be found in the Virtual Environment, Visual Studio Code, and Github appendices.
 ```
@@ -26,7 +26,7 @@ Before you do that, let's look at a simple example from a GitHub [gist](https://
 
 [![image](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EgVOrLdWQdTjBJl_2itCs6LZGBXUGHZ1#scrollTo=KW1bwfGvFNiT)
 
-Google Colab is an online notebook that lets you write and execute code. Its advantage is that it is shareable, connected to your Google account, and performs calculations in the cloud. The disadvantage is once you close the notebook, everything you've installed or executed will disappear, although the code is saved. It's great for quickly testing out Python script in a notebook environment.
+Google Colab is an online notebook that lets you write and execute code. Its advantage is that it is shareable, connected to your Google account, and performs calculations in the cloud. The disadvantage is that once you close the notebook, everything you've installed or executed will disappear, although the code is saved. It's great for quickly testing out Python scripts in a notebook environment.
 
 ```{note} 'Uncommenting' a line in Python means removing the hashtag before the command or clicking on the line, then clicking control or command plus backslash (/).
 ```
@@ -96,10 +96,10 @@ data[["red", "green", "blue"]].isel(time=2).to_array().plot.imshow(vmin=0, vmax=
 True color Sentinel-2 image.
 ```
 
-The access and sharing of this code are another example of why free and open-source software is special. The community is willing to share it, and it is reproducible and easily modified to meet your needs.
+Accessing and sharing this code is another example of why free and open-source software is special. The community is willing to share it, and it is reproducible and easy to modify to meet your needs.
 
 ## Geemap
-Compared to Javascript, Geemap is a much easier way to access, analyze, and visualize Earth Engine data, all within a Python package environment developed by [Qiusheng Wu](https://github.com/giswqs).
+Compared to JavaScript, Geemap makes it much easier to access, analyze, and visualize Earth Engine data within a Python package developed by [Qiusheng Wu](https://github.com/giswqs).
 
 ```{admonition} Getting Started
 Watch this [installation video](https://www.youtube.com/watch?v=gyQ6wBqYGks&list=PLAxJ4-o7ZoPeXzIjOJx3vBF0ftKlcYH9J&index=3) followed by this [vs code and github](https://www.youtube.com/watch?v=gyQ6wBqYGks&list=PLAxJ4-o7ZoPeXzIjOJx3vBF0ftKlcYH9J&index=3) video. If you already have an IDE, Miniconda, and virtual env's installed, go to the Geemap [installation](https://geemap.org/installation/) page.
@@ -123,12 +123,12 @@ To give you a generic world map with map widgets ({numref}`m`).
 Interactive map in Geemap.
 ```
 
-In the upper right corner of the map, click the wrench icon, then click the two encircling arrows box (bottom row, middle) to open the Javascript to Python code converter ({numref}`convert`).
+In the upper right corner of the map, click the wrench icon, then click the two encircling arrows box (bottom row, middle) to open the JavaScript to Python code converter ({numref}`convert`).
 
 ```{figure} /figures/python/convert.png
 :height: 300px
 :name: convert
-Textbox converter for Earth Engine Javascript to Python.
+Text box converter for Earth Engine JavaScript to Python.
 ```
 
 Go to the Earth Engine [code editor](https://code.earthengine.google.com/), open the script from Chapter 2, select all, and paste it into the converter. Click the convert button. The code is copied to the clipboard. Paste it into a new code block and comment out the definition function on lines 4-6:
@@ -168,7 +168,7 @@ Running that code block will result in {numref}`bgb_py`.
 ```{figure} /figures/python/bgb_py.jpg
 :height: 500px
 :name: bgb_py
-Adding above and belowground biomass carbon with belowground showing.
+Adding aboveground and belowground biomass carbon, with belowground shown.
 ```
 
 If you return to the wrench icon and select the layers icon to the left, you can switch layers on and off ({numref}`layers_panel`).
@@ -211,7 +211,7 @@ If you turn off the aboveground and belowground maps, a map with the clipped abo
 Raster clipped to area of interest with aboveground biomass carbon visible.
 ```
 
-Delete the function from the javascript conversion that you commented out previously in lines 4-6. If you need to keep running and test the map, you can turn off the original biomass layers added for the entire globe by changing the center map add map layers to the code block to
+Delete the function from the JavaScript conversion that you commented out previously in lines 4-6. If you need to keep running and test the map, you can turn off the original biomass layers added for the entire globe by changing the center map and add map layers to the code block to
 
 ```python
 # Center map and add layers
@@ -222,11 +222,11 @@ m.addLayer(dataset, vis_b, 'Belowground biomass carbon', False)
 Adding 'False' after the layer name still adds the layers to the map but turns them off by default. 
 
 ```{admonition} Lambda Function
-Let's take another look at the lambda function to clip the raster. Lambda functions are similar to other Python functions but are not bound to a name when run. Known as anonymous functions, they are used when you need a one-off function that isn't separately defined. In our case, the Lamda function takes an image, clips it to the bounding box, and returns the clipped image. The map() function, not to be confused with the Map function in Javascript, applies the function to every image in the ImageCollection.
+Let's take another look at lambda functions for clipping rasters. Lambda functions are similar to other Python functions but are not bound to a name when run. Known as anonymous functions, they are used when you need a one-off function that isn't separately defined. In our case, the lambda function takes an image, clips it to the bounding box, and returns the clipped image. The map() function, not to be confused with the Map function in JavaScript, applies the function to every image in the ImageCollection.
 ```
 
-## Easier bboxing
-Boots and cats, boots and cats, boots and cats. Yeah! No wait, it's bounding boxing, not beat boxing! As you can see in both examples, adding the code for a bounding box can be semi-painful. The [Polyline Tool](https://www.keene.edu/campus/maps/tool) allows you to create the needed code when you right-click each point in a polygon. 
+## Easier Bboxing
+Boots and cats, boots and cats, boots and cats. Yeah! No wait, it's bounding boxing, not beat boxing! As you can see in both examples, adding the code for a bounding box can be semi-painful. The [Polyline Tool](https://www.keene.edu/campus/maps/tool) lets you generate the needed code when you right-click each point in a polygon. 
 
 ```python
 # Import geemap and initialize earth engine
@@ -276,9 +276,9 @@ m
 You may need to zoom into Cape Cod to see the box. This somewhat lengthy method allows you to create any global polygon with as many points as you like.
 
 ## Leafmap
-A related Python package worth exploring is [Leafmap](https://leafmap.org/), also developed by Qiusheng Wu and focused on geospatial data analysis and visualization. Leafmap is increasing its 3d capabilities, great for terrain and building visualization. Like Geemap, the site has extensive documentation and tutorials. I highly recommend attending one of the Leafmap workshops, which will guide you through installation, examples, and many use cases.
+A related Python package worth exploring is [Leafmap](https://leafmap.org/), also developed by Qiusheng Wu and focused on geospatial data analysis and visualization. Leafmap is expanding its 3D capabilities and is great for terrain analysis and building visualizations. Like Geemap, the site has extensive documentation and tutorials. I highly recommend attending a Leafmap workshop, which will guide you through installation, examples, and many use cases.
 
-Notebooks and videos support the tutorials and workshops to walk you through this excellent software package. Click on the links provided to run the code in Binder or Colab. If you wanted to run a workshop in VS Code:
+Notebooks and videos support the tutorials and workshops to walk you through this excellent software package. Click on the links provided to run the code in Binder or Colab. If you want to run a workshop in VS Code:
 
 1. Click workshops in leafmap.org
 2. Select the workshop
@@ -298,7 +298,6 @@ There are many more Python libraries focused on geospatial analysis. Go to githu
 [Spatial Thoughts](https://spatialthoughts.com), run by Ujaval Gandhi, offers a free course called [Python Foundation for Spatial Analysis](https://courses.spatialthoughts.com/python-foundation.html). The site also provides many other free and paid courses and tutorials for geospatial analysis.
 - [Geocomputation with Python](https://py.geocompx.org/) is an open source book inspired by the FOSS4G movement. 
 - [RiverREM](https://github.com/OpenTopography/RiverREM). A super cool Python package for automatically generating river relative elevation model (REM).
-- [lonboard](https://developmentseed.org/blog/2023-10-23-lonboard). Python library for fast geospatial vector data visualization.
 - [Python for Ecologists](https://datacarpentry.org/python-ecology-lesson). The Datacarpentry.org tutorial focused on data analysis and visualization using Python and Jupyter notebooks. This is more data than geospatial, but it is a useful set of tutorials.
 - [Unlocking the Depths](https://medium.com/@kavyajeetbora/unlocking-the-depths-a-guide-to-estimating-lake-volume-with-google-earth-engine-and-python-ef36b842fa2a). A useful tutorial by Kavyajeet Bora for mapping bathymetry and calculating lake volume using Geemap.
 - Wu, Q. 2026. [GeoAI with Python: A Practical Guide to Open-Source Geospatial AI](book.opengeoai.org).

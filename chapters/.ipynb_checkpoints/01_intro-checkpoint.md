@@ -1,0 +1,75 @@
+---
+title: FOS Geospatial Tools
+subject: 
+subtitle: A handbook for geospatial practitioners and scientists
+short_title: 1. Introduction
+exports:
+    - format: typst
+      template: lapreprint-typst
+      output: export/01_intro.pdf
+---
+
+Welcome to Free and Open Source Geospatial Tools v 2.0. This book provides resources and examples of open-source geospatial software and solutions and is updated from the version published in 2024. 
+
+# Support
+This book is free to use. If you want to support, donate, or buy me a coffee, please visit my [paypal](https://paypal.me/3pointxyz) site. I will be adding chapters and resources in the future. Please share the book with others who might benefit from reading it. I appreciate your support!
+
+# Why this book?
+Accessing, processing, and analyzing geospatial data can be daunting, often limited by data accessibility, compatibility, and cost. Many geospatial resources, tutorials, and books are available, but most focus on specific tools, such as Spatial SQL [@forrest2023], cloud-based remote sensing with Google Earth Engine [@eefa], or Qiusheng Wu's excellent geospatial data analysis book using Geemap and Earth Engine [@geemap]. Inspired by the Free and Open Source Software for Geospatial (FOSS4G) conference started by the Open Source Geospatial Foundation, Free and Open Source Geospatial Tools provides a guide to open-source geospatial software packages and workflows.
+
+At the software level, many tutorials, GitHub repositories, and software sites assume you are familiar with installation or running code. They'll use acronyms such as CLI and IDE; if you're a beginner, you may have no idea what they're talking about. Once you decipher the terms, running into errors and trying to fix them can be trying or a deterrent to using free and open-source geospatial software. Don't be discouraged by entering this new world; keep at it when errors occur, or the code doesn't do what you want.
+
+The FOSS book addresses these challenges head-on by providing practical solutions, resources for further learning, and tips for getting the basics running smoothly. You want to analyze and visualize data, not spend time searching Stack Exchange or asking ChatGPT how to fix an obscure error when your code won't run, or you can't install a package correctly.
+
+## Audience & Learning
+This book is intended for beginners with some knowledge of desktop tools such as ArcGIS Pro or QGIS and a limited understanding of coding using JavaScript or Python. Ideally, you will have taken an introductory geography and computer science course that introduced you to software and languages. If not, you can still get started, but you'll need some background knowledge, such as basic Python coding, to get up to speed. Each chapter will offer resources and tutorials to help you get up to speed.
+
+## Chapters
+The book contains the following chapters:
+
+1. **Introduction**. This chapter.
+2. 📖**FOSS**. This chapter introduces free and open-source software, shares a bit about my journey in this field, and covers my use of the tools in the book.
+3. 🌍**Google Earth Engine**. Google Earth Engine is an incredible resource, with a large data catalog and cloud-based geospatial analysis. This chapter provides some quick tips and steps to get started.
+4. 🌟/⚠️**Pros & Cons**. Outlines the pros and cons of free and open-source vs. paid geospatial software.
+5. 🐍**Python**. How to use Python for geospatial data analysis and visualization with various libraries.
+6. 🦆**SQL**. The universal database language, Structured Query Language (SQL), with a focus on DuckDB.
+7. 🌐**QGIS**. An introduction to this powerful desktop GIS.
+8. 🤖/🛠**AIML**. Artificial intelligence (AI) and machine learning (ML) are popular right now, right? Here's how to use these tools to complement, not replace, your work.
+9. 📶**R**. A programming language widely adopted by academics, R is easy to start with and has many statistical computing, data visualization, and geospatial packages.
+10. 🔎**Field Surveys**. Your guide to open-source field data collection.
+11. 🚁 🛸 🎮**Drones**. Using drones for field surveys and developing high-resolution geospatial data. Chapter in draft, coming soon.
+12. 🌾**GRASS**. Using GRASS GIS in your workflows and data analysis. Chapter in draft, coming soon.
+13. 📊 📈**Visualiztion**. Effective principles for geospatial data visualization
+14. 🔮**Future**. Where your journey might lead with other established free and open-source geospatial software. We'll also explore the future of free and open-source geospatial software.
+
+## MyST
+This book was made using [MyST](https://mystmd.org/), a free and open-source package that lets anyone build beautiful, publication-quality books and articles from computational content. Thank you, MyST, for this wonderful resource!
+
+# Book Citation
+Please cite as
+
+Russell, Vance. 2026. [Free and Open Source Geospatial Solutions](https://3point.xyz/geo2). 3point Geospatial.
+
+or in Bibtex format:
+
+```
+@book{vrussell2026,
+  title		  = {Free and open source geospatial tools},
+  author	  = {Russell, Vance},
+  year		  = {2026},
+  publisher	  = {3point Geospatial},
+  url 		  = {https://3point.xyz/geo2}
+}
+```
+
+# Acknowledgements
+I would like to thank and acknowledge the many free and open-source geospatial pioneers who offer their incredible resources and dedication to the trade. I've learned so much from you, not just about geospatial analysis but also the value of geographic information, analysis, and generosity.
+
+Some of this book is adapted from Qiusheng Wu's extensive, innovative, and useful geospatial resources, such as Geemap and Leafmap. Dr. Wu's vast geospatial knowledge, tutorials, videos, and courses are an incredible learning resource. Thank you, Qiusheng! I only hope this complements your work.
+
+A special thank you to my family, who supported me while I wrote this in the early AM or late PM hours. Your love and support have always inspired me. A special thank you to my spouse, who inspired me to take geospatial analysis more seriously. It's hard to start doing this when you have a Ph.D. in the house with a degree in ecological remote sensing, but you always encouraged me and, with some sighing, helped explain many things. Thank you, Emma!
+
+# Table of Contents
+```{tableofcontents}
+
+```

@@ -1,5 +1,5 @@
 ---
-title: Effective Data Visualiation
+title: Effective Data Visualization
 subject: Visualization
 subtitle: A Primer with Examples
 short_title: 13. Visualization
@@ -9,7 +9,7 @@ exports:
       output: export/13_datavis.pdf
 ---
 # FOSS
-There are a lot of ways to visualize data, some of them quite expensive and proprietary. Then there are free and open-source software tools that are increasingly useful and sometimes on par with paid or subscription software. 
+There are many ways to visualize data, some of them quite expensive and proprietary. Free and open-source software tools are increasingly useful and sometimes on par with paid or subscription software. 
 
 Generally, the biggest plus to using FOSS tools is that they're free and flexible, keep you in charge of the data and what it looks like, and your data doesn't have to go to a cloud server to be used by whatever AI company to train their models {numref}`pluses`. The biggest disadvantage is having to often rely on code and the terminal to run the tools. However, the latter is becoming less of a barrier with large language models (LLMs) such as Claude, script snippets, and other tricks we'll show you that make life easier in the FOSS world.
 
@@ -24,9 +24,7 @@ Generally, the biggest plus to using FOSS tools is that they're free and flexibl
 | 🟢 Flexible             | 🔴 Unavailable tools |
 :::
 
-You may also find that data analysis is easier with FOSS tools, but visualization may be better with certain proprietary formats. For instance, QGIS has an excellent layout format, but it's not as easy to use as ArcGIS Pro's [^arc]. The same could be said for Inkscape vs. Illustrator, although the latter's exorbitant cost does not justify its ease of use. Inkscape, in fact, can pretty much do anything you really need post-layout for a map.
-
-[^arc]: ArcGIS Pro layout has several very annoying features that you cannot disable in settings or automate away. One is the default border around any map layout. You then have to go into properties and turn off the border, which is unnecessary and wastes time. The other is the service layer credits that you have to click on dynamic text, search for service layer credits, and then click on the credits to modify them. This automatically reconfigures the box; if you try to adjust it, the text becomes gigantic. Again, there's no way to disable, automate, or quickly change these annoying features to fit your needs. 
+You may also find that data analysis is easier with FOSS tools, but visualization may be better with certain proprietary formats. For instance, QGIS has an excellent layout format, but it's not as easy to use as ArcGIS Pro's layout feature. The same could be said for Inkscape vs. Illustrator, although the latter's exorbitant cost does not justify its ease of use. Inkscape, in fact, can pretty much do anything you really need post-layout for a map.
 
 # Principles
 > "Because the world around us is a complex one, it would be virtually impossible to simply place a small version of it on a map...Consequently, all maps are abstractions of reality and form." @field
@@ -47,7 +45,7 @@ FOSS is really just the tools you use to convey your information, and you can ma
 It's worth watching John's YouTube video (and others) to get insight into great visualization techniques and tricks. We'll forgive him for using ArcGIS Pro!
 
 ## Purpose & Audience
-Before you begin the layout, define your message before you design. Every effective map or chart begins with a clear understanding of:
+Before you begin the layout, define your message. Every effective map or chart begins with a clear understanding of:
 
 - **What is the story?**—What insight or finding do you want to communicate?
 - **Who is the audience?**—What is their background and knowledge level?
@@ -58,7 +56,7 @@ According to cartographic design theory, a map or chart that cannot stand alone 
 ## Data Integrity
 Represent data truthfully and avoid distortion. It is easy to lie with maps; although all maps distort the truth somewhat, you just need to decide which truth you're displaying. Distorted visualizations mislead audiences and undermine decision-making. This is not just an ethical issue—it destroys trust and credibility.
 
-Solid data and data cleaning underlie data integrity. This means:
+Clean data underpins data integrity. This means:
 
 - **Understand your data**—Conducting exploratory data analysis, cleaning the data, and looking at multiple ways to clearly and accurately portray analysis results are critical.
 - **Accurate scaling**—Visual dimensions must be proportional to data values.
@@ -98,7 +96,7 @@ A key principle is to match the encoding to your data type. These include:
 - **Temporal data** → Use position (typically left to right) or animation
 
 ## Simplicity
-Minimizing clutter and too many items in a map maximizes clarity and focuses the audience on your key messsages. Viewers have limited cognitive capacity. Every element competing for attention reduces the clarity of your message. Research in visual perception consistently shows that simplified, focused visualizations communicate more effectively than complex, decorated ones.Your visualization should communicate its message as efficiently as possible. Every element should earn its place.
+Minimizing clutter and too many items on a map maximizes clarity and keeps the audience focused on your key messages. Viewers have limited cognitive capacity. Every element competing for attention reduces your message's clarity. Research in visual perception consistently shows that simplified, focused visualizations communicate more effectively than complex, decorated ones. Your visualization should communicate its message as efficiently as possible. Every element should earn its place.
 
 Edward Tufte's foundational concept of the data-ink ratio advocates for maximizing the amount of ink devoted to representing data in any data visualization [@tufte]. Tufte argues that "non-data-ink" or decoration should be eliminated or minimized.
 
@@ -126,18 +124,18 @@ Some examples of items to eliminate:
 
 :::{important} A word about north arrows & scale bars 🧭
 :class: dropdown
-North arrows are often a nice but not necessary feature. They often add unnecessary clutter when it's understood that up is north on the page. North arrows are only really necessary if you have rotated the map and north is. Therefore, a different direction. Scale bars also add to the clutter and are unnecessary, particularly if your audience is familiar with the map's region or if you have an inset map showing the area's location.
+North arrows are often a nice but not necessary feature. They often add unnecessary clutter when it's understood that up is north on the page. North arrows are often only really necessary if you have rotated the map and north is not pointing straight up. I get it, you want to see straightaway where north is, but convention says it's towards the top of the page if there's no arrow. Scale bars also add to the clutter and are unnecessary, particularly if your audience is familiar with the map's region or if you have an inset map showing the area's location. How many people are really getting a ruler out to measure distances on your map, anyway?
 :::
 
 ## Hierarchy
 Guide viewer attention and integrate all elements intentionally. Don't add items such as north arrows and scale bars just because everyone else does. A well-designed map controls the order and emphasis of information, guiding viewers from the most important insights to supporting details. Visualization experts emphasize the importance of visual hierarchy in directing attention and improving comprehension [@few].
 
-Viewers naturally scan visualizations with a specific eye pattern. By understanding this, you can guide them to your key insights first, then let them explore details. This makes your visualization more persuasive and memorable. Basic design principles to aid your design include
+Viewers naturally scan visualizations with a specific pattern. By understanding this, you can guide them to your key insights first, then let them explore details. This makes your visualization more persuasive and memorable. Basic design principles to aid your design include
 
 - **Consistency**—Use the same colors and symbols throughout a series of maps/charts
 - **Balance**—Distribute visual weight; avoid one-sided emphasis
 - **Rhythm**—Repetitive patterns (when intentional) can emphasize patterns in data
-- **Gestalt**—Gestalt principles describe how humans perceive and organize visual information. Some of these include linking similar elements, symmetry, proximity, and continuity. Use these when organizing map elements.
+- **Gestalt**—Gestalt principles describe how humans perceive and organize visual information. These include linking similar elements, symmetry, proximity, and continuity. Use these when organizing map elements.
 
 Use the following to emphasize importance or lead the viewer to key elements of your visualization:
 
@@ -166,7 +164,7 @@ A map showing absolutely nothing. From terriblemaps.
 :::
 
 ## Bad-un
-Let's explore some details of these principles and suggestions using an example. {numref}`bad` shows many things wrong you can do with a map, from too many colors, excessive text, a hard-to-read legend, and confusing data layers. Overall, it's just trying to show too many layers and combining data that may or may not be related in a static map. There are random fire labels, some overlapping text, and, unless you know the area, it's hard to tell where the map is located. The only thing this map gets kudos for is 80's ski clothing color styling!
+Let's explore these principles and suggestions with an example. {numref}`bad` shows many ways to go wrong with a map, from too many colors and excessive text to a hard-to-read legend and confusing data layers. Overall, it tries to show too many layers and combine data that may or may not be related in a static map. There are random fire labels, some overlapping text, and, unless you know the area, it's hard to tell where the map is located. The only thing this map gets kudos for is its 80s ski-clothing color styling!
 
 :::{figure} /figures/datavis/superbad.png
 :label: bad
@@ -178,7 +176,7 @@ A terrible map!
 ## Good-un
 Let's see if we can simplify it to make it a little more readable. In the new map, we've simplified the layout in several ways {numref}`better`. First, we removed the north arrow, scale bar, much of the purple text, and background colors. We also removed the credits, something we normally would not recommend, but they were quite long, and it was easier to move them to the figure caption. We added an inset map showing the location of the area of interest, highlighted with a clearer border, on a simplified base map. This focuses the reader on the important parts. 
 
-We clarified the title as well. Legend entries are simplified and fewer. We used guides to align the legend and inset map, as well as the legend and text, to help balance the overall items in the map. It's not perfect (yet), but it is much easier to interpret and doesn't bombard the reader with multiple types of data. For instance, the base map could be cleaned up and the labels added to highlight key places.
+We clarified the title as well. Legend entries are simplified and fewer. We used guides to align the legend and inset map, as well as the legend and text, to help balance the overall layout. It's not perfect (yet), but it is much easier to interpret and doesn't bombard the reader with multiple types of data. For instance, you could clean up the base map and add labels to highlight key places and guide the reader to illustrate your key points.
 
 :::{figure} /figures/datavis/good.png
 :label: better
@@ -188,7 +186,7 @@ A map of fire impacts on disadvantaged communities. Credits: ESRI, Tiger Lines, 
 :::
 
 ### QGIS AOI
-Despite what I said about ArcGIS Pro's layout being easier to use than QGIS, there is a very useful feature in QGIS that allows you to easily highlight an area of interest on a map: an inverted polygon for a vector layer. In the good map layout example, let's see how to use this feature ({numref}`aoi-vis`).
+Although I said ArcGIS Pro's layout is easier to use than QGIS, QGIS does have a useful feature that lets you easily highlight an area of interest on a map: an inverted polygon for a vector layer. In the good map layout example, let's see how to use this feature ({numref}`aoi-vis`).
 
 :::{figure} /figures/datavis/aoi.png
 :label: aoi-vis
@@ -201,14 +199,14 @@ Here are the steps for gray offset shading for the AOI:
 
 1. Select inverted polygons in the symbol categorization pull-down menu
 2. Click on Simple Fill below fill and below that in the Symbol layer, type change to Shapeburst fill
-3. In the gradient colors section, change both colors to black with the second black changed to full opacity, e.g., move the opacity slider all the way to the left so that the color is transparent.
-4. Under shading style, click Set distance and leave a 5 mm, or if you want to minimize the shading, reduce or maximize it.
+3. In the gradient colors section, change both colors to black, with the second black changed to full opacity; e.g., move the opacity slider all the way to the left so that the color is transparent.
+4. Under shading style, click Set distance and leave it at 5 mm, or if you want to minimize the shading, reduce it.
 5. Voila!
 
 The aoi border will now look something similar to {numref}`better`.
 
 # Web
-Another option from static maps is creating interactive web maps. QGIS has a basic plugin called qgis2web that creates an HTML version of your map. You can turn the legend on and off and pick the layers and popups from them to feature in the map. Other web-based options include Leafmap, MapLibre, kepler.gl, DeckGL, and Solara, among others.
+Another option for static maps is to create interactive web maps. QGIS has a basic plugin called qgis2web that creates an HTML version of your map. You can turn the legend on and off and choose layers and popups to feature in the map. Other web-based options include Leafmap, MapLibre, kepler.gl, DeckGL, and Solara, among others.
 
 # Map Craft
-You don't have to be the most amazing graphic designer, but practicing your craft, getting your maps out there for feedback, and adapting great designs all help. Whether you're using FOSS tools or proprietary software, the principles of effective visualization—clear purpose, data integrity, thoughtful encoding, simplicity, and hierarchy—remain constant and guide every design decision you make. By combining these foundational principles with continuous practice and a willingness to learn from both successes and failures, you'll develop the skills to create compelling visualizations that communicate your spatial data stories with clarity and impact.
+You don't have to be the most amazing graphic designer, but practicing your craft, sharing your maps for feedback, and adapting great designs all help. Whether you're using FOSS tools or proprietary software, the principles of effective visualization—clear purpose, data integrity, thoughtful encoding, simplicity, and hierarchy—remain constant and guide every design decision you make. By combining these foundational principles with continuous practice and a willingness to learn from both successes and failures, you'll develop the skills to create compelling visualizations that communicate your spatial data stories with clarity and impact.
