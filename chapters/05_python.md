@@ -16,8 +16,10 @@ Then I found Geemap and Leafmap—incredible, user-friendly Python packages deve
 # Getting Started
 To be honest, getting started using a Windows computer was a total pain in the ass. So, if you're using Linux or Apple OS, getting things running will be much easier. It will take a few hours to set up from scratch, but a great resource is the University of Tennessee, Knoxville [Geog-414](https://geog-414.gishub.org/book/preface/software.html) course software web page. Scroll through the page to familiarize yourself with the commands. Near the bottom of the page is a series of videos to get you started, which are worth viewing and following. For some reason, Miniconda didn't work well on my Windows 11 machine, but Anaconda worked. 
 
-```{important} Getting started quick guides can be found in the Virtual Environment, Visual Studio Code, and Github appendices.
-```
+:::{important} Quick Guides
+:class: dropdown
+Getting started quick guides can be found in the Virtual Environment, Visual Studio Code, and Github appendices.
+:::
 
 To get you up and running quickly, I've provided a cheat sheet in [Appendix 1](z_appendices/appendix1.md) that summarizes the Geog-414 videos and should have you started quickly. However, you may want to refer to the videos if you get stuck.
 
@@ -28,8 +30,10 @@ Before you do that, let's look at a simple example from a GitHub [gist](https://
 
 Google Colab is an online notebook that lets you write and execute code. Its advantage is that it is shareable, connected to your Google account, and performs calculations in the cloud. The disadvantage is that once you close the notebook, everything you've installed or executed will disappear, although the code is saved. It's great for quickly testing out Python scripts in a notebook environment.
 
-```{note} 'Uncommenting' a line in Python means removing the hashtag before the command or clicking on the line, then clicking control or command plus backslash (/).
-```
+:::{note} Commenting or Uncommenting
+:class: dropdown
+'Uncommenting' a line in Python means removing the hashtag before the command or clicking on the line, then clicking control or command plus backslash (/).
+:::
 
 Install the dependencies:
 
@@ -181,8 +185,10 @@ Layers panel.
 
 Add a new code block and add an area of interest called bbox, short for bounding box:
 
-```{tip} To run the code in a code block, click ctrl/command + enter. To run the code and add a new code block, click alt + enter.
-```
+:::{tip} Running code
+:class: dropdown
+To run the code in a code block, click ctrl/command + enter. To run the code and add a new code block, click alt + enter.
+:::
 
 ```python
 # Add an area of interest
